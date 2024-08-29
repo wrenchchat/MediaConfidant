@@ -1,0 +1,8 @@
+node_modules
+!dist/index.js
+.cache
+.npmrc
+yarn-error.log
+.idea/
+.DS_Store
+.eslintcache

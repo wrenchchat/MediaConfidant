@@ -1,0 +1,72 @@
+view: tiktok_ad_dim {
+  derived_table: {
+    datagroup_trigger: tiktok_ads_etl_datagroup
+    sql: SELECT
+      AD.AD_ID,
+      AD.ADGROUP_ID,
+      AD.CAMPAIGN_ID,
+      ADGROUP_NAME,
+      CAMPAIGN_NAME
+
+      FROM
+      (SELECT AD_ID,ADGROUP_ID,CAMPAIGN_ID,
+       ROW_NUMBER() OVER (PARTITION BY AD_ID ORDER BY CREATE_TIME) AS row_num
+       FROM
+       @{TIKTOK_SCHEMA}.AD_HISTORY
+       QUALIFY row_num = 1
+       )AD
+      INNER JOIN
+      (
+        SELECT ADGROUP_ID,ADGROUP_NAME,
+       ROW_NUMBER() OVER (PARTITION BY ADGROUP_ID ORDER BY CREATE_TIME) AS row_num
+       FROM
+       @{TIKTOK_SCHEMA}.ADGROUP_HISTORY
+       QUALIFY row_num = 1
+       )ADGROUP
+      ON AD.ADGROUP_ID= ADGROUP.ADGROUP_ID
+      INNER JOIN
+      (
+       SELECT CAMPAIGN_ID,CAMPAIGN_NAME,
+       ROW_NUMBER() OVER (PARTITION BY CAMPAIGN_ID ORDER BY CREATE_TIME) AS row_num
+       FROM
+       @{TIKTOK_SCHEMA}.CAMPAIGN_HISTORY
+       QUALIFY row_num = 1
+      )CAMPAIGN
+      ON AD.CAMPAIGN_ID= CAMPAIGN.CAMPAIGN_ID
+       ;;
+  }
+
+  measure: count {
+    type: count
+    drill_fields: [detail*]
+  }
+
+  dimension: ad_id {
+    type: number
+    sql: ${TABLE}."AD_ID" ;;
+  }
+
+  dimension: adgroup_id {
+    type: number
+    sql: ${TABLE}."ADGROUP_ID" ;;
+  }
+
+  dimension: campaign_id {
+    type: number
+    sql: ${TABLE}."CAMPAIGN_ID" ;;
+  }
+
+  dimension: adgroup_name {
+    type: string
+    sql: ${TABLE}."ADGROUP_NAME" ;;
+  }
+
+  dimension: campaign_name {
+    type: string
+    sql: ${TABLE}."CAMPAIGN_NAME" ;;
+  }
+
+  set: detail {
+    fields: [ad_id, adgroup_id, campaign_id, adgroup_name, campaign_name]
+  }
+}

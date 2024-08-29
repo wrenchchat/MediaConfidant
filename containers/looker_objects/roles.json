@@ -1,0 +1,475 @@
+[
+    {
+        "id": "2",
+        "name": "Admin",
+        "permission_set": {
+            "built_in": true,
+            "id": "1",
+            "all_access": true,
+            "name": "Admin",
+            "permissions": [
+                "access_data",
+                "see_lookml_dashboards",
+                "see_looks",
+                "see_user_dashboards",
+                "explore",
+                "create_table_calculations",
+                "create_custom_fields",
+                "can_create_forecast",
+                "can_override_vis_config",
+                "save_content",
+                "save_dashboards",
+                "save_looks",
+                "create_public_looks",
+                "download_with_limit",
+                "download_without_limit",
+                "schedule_look_emails",
+                "schedule_external_look_emails",
+                "create_alerts",
+                "follow_alerts",
+                "send_to_s3",
+                "send_to_sftp",
+                "send_outgoing_webhook",
+                "send_to_integration",
+                "see_sql",
+                "see_lookml",
+                "develop",
+                "deploy",
+                "support_access_toggle",
+                "manage_project_models",
+                "use_global_connections",
+                "manage_project_connections_restricted",
+                "manage_project_connections",
+                "use_sql_runner",
+                "clear_cache_refresh",
+                "can_copy_print",
+                "see_drill_overlay",
+                "manage_spaces",
+                "manage_homepage",
+                "manage_models",
+                "manage_stereo",
+                "create_prefetches",
+                "login_special_email",
+                "embed_browse_spaces",
+                "embed_save_shared_space",
+                "manage_embed_settings",
+                "manage_themes",
+                "manage_privatelabel",
+                "see_alerts",
+                "see_queries",
+                "see_logs",
+                "see_users",
+                "sudo",
+                "manage_groups",
+                "manage_roles",
+                "manage_user_attributes",
+                "see_schedules",
+                "see_pdts",
+                "see_datagroups",
+                "update_datagroups",
+                "see_system_activity",
+                "administer",
+                "mobile_app_access"
+            ],
+            "url": "https://localhost:19999/api/4.0/permission_sets/1",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "model_set": {
+            "built_in": true,
+            "id": "1",
+            "all_access": true,
+            "models": [
+                "ga4",
+                "synthetic_data",
+                "data-dictionary",
+                "lookml-diagram",
+                "synthetic",
+                "extension-api-explorer"
+            ],
+            "name": "All",
+            "url": "https://localhost:19999/api/4.0/model_sets/1",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "url": "https://localhost:19999/api/4.0/roles/2",
+        "users_url": "https://localhost:19999/api/4.0/roles/2/users",
+        "can": {
+            "create": true,
+            "delete": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "edit_in_ui": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "id": "3",
+        "name": "User",
+        "permission_set": {
+            "built_in": false,
+            "id": "3",
+            "all_access": false,
+            "name": "User",
+            "permissions": [
+                "access_data",
+                "can_create_forecast",
+                "clear_cache_refresh",
+                "create_custom_fields",
+                "create_table_calculations",
+                "download_without_limit",
+                "explore",
+                "manage_spaces",
+                "mobile_app_access",
+                "save_content",
+                "save_dashboards",
+                "save_looks",
+                "schedule_look_emails",
+                "see_drill_overlay",
+                "see_lookml",
+                "see_lookml_dashboards",
+                "see_looks",
+                "see_sql",
+                "see_user_dashboards",
+                "send_to_integration"
+            ],
+            "url": "https://localhost:19999/api/4.0/permission_sets/3",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "model_set": {
+            "built_in": true,
+            "id": "1",
+            "all_access": true,
+            "models": [
+                "ga4",
+                "synthetic_data",
+                "data-dictionary",
+                "lookml-diagram",
+                "synthetic",
+                "extension-api-explorer"
+            ],
+            "name": "All",
+            "url": "https://localhost:19999/api/4.0/model_sets/1",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "url": "https://localhost:19999/api/4.0/roles/3",
+        "users_url": "https://localhost:19999/api/4.0/roles/3/users",
+        "can": {
+            "create": true,
+            "delete": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "edit_in_ui": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "id": "4",
+        "name": "Developer",
+        "permission_set": {
+            "built_in": false,
+            "id": "2",
+            "all_access": false,
+            "name": "Developer",
+            "permissions": [
+                "access_data",
+                "can_create_forecast",
+                "clear_cache_refresh",
+                "create_custom_fields",
+                "create_table_calculations",
+                "deploy",
+                "develop",
+                "download_without_limit",
+                "explore",
+                "manage_spaces",
+                "mobile_app_access",
+                "save_content",
+                "save_dashboards",
+                "save_looks",
+                "schedule_look_emails",
+                "see_drill_overlay",
+                "see_lookml",
+                "see_lookml_dashboards",
+                "see_looks",
+                "see_pdts",
+                "see_sql",
+                "see_user_dashboards",
+                "send_to_integration",
+                "use_sql_runner"
+            ],
+            "url": "https://localhost:19999/api/4.0/permission_sets/2",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "model_set": {
+            "built_in": true,
+            "id": "1",
+            "all_access": true,
+            "models": [
+                "ga4",
+                "synthetic_data",
+                "data-dictionary",
+                "lookml-diagram",
+                "synthetic",
+                "extension-api-explorer"
+            ],
+            "name": "All",
+            "url": "https://localhost:19999/api/4.0/model_sets/1",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "url": "https://localhost:19999/api/4.0/roles/4",
+        "users_url": "https://localhost:19999/api/4.0/roles/4/users",
+        "can": {
+            "create": true,
+            "delete": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "edit_in_ui": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "id": "5",
+        "name": "Viewer",
+        "permission_set": {
+            "built_in": false,
+            "id": "6",
+            "all_access": false,
+            "name": "Viewer",
+            "permissions": [
+                "access_data",
+                "clear_cache_refresh",
+                "download_without_limit",
+                "mobile_app_access",
+                "schedule_look_emails",
+                "see_drill_overlay",
+                "see_lookml_dashboards",
+                "see_looks",
+                "see_user_dashboards",
+                "send_to_integration"
+            ],
+            "url": "https://localhost:19999/api/4.0/permission_sets/6",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "model_set": {
+            "built_in": true,
+            "id": "1",
+            "all_access": true,
+            "models": [
+                "ga4",
+                "synthetic_data",
+                "data-dictionary",
+                "lookml-diagram",
+                "synthetic",
+                "extension-api-explorer"
+            ],
+            "name": "All",
+            "url": "https://localhost:19999/api/4.0/model_sets/1",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "url": "https://localhost:19999/api/4.0/roles/5",
+        "users_url": "https://localhost:19999/api/4.0/roles/5/users",
+        "can": {
+            "create": true,
+            "delete": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "edit_in_ui": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "id": "636",
+        "name": "dev_training_wheels",
+        "permission_set": {
+            "built_in": false,
+            "id": "2",
+            "all_access": false,
+            "name": "Developer",
+            "permissions": [
+                "access_data",
+                "can_create_forecast",
+                "clear_cache_refresh",
+                "create_custom_fields",
+                "create_table_calculations",
+                "deploy",
+                "develop",
+                "download_without_limit",
+                "explore",
+                "manage_spaces",
+                "mobile_app_access",
+                "save_content",
+                "save_dashboards",
+                "save_looks",
+                "schedule_look_emails",
+                "see_drill_overlay",
+                "see_lookml",
+                "see_lookml_dashboards",
+                "see_looks",
+                "see_pdts",
+                "see_sql",
+                "see_user_dashboards",
+                "send_to_integration",
+                "use_sql_runner"
+            ],
+            "url": "https://localhost:19999/api/4.0/permission_sets/2",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "model_set": {
+            "built_in": true,
+            "id": "1",
+            "all_access": true,
+            "models": [
+                "ga4",
+                "synthetic_data",
+                "data-dictionary",
+                "lookml-diagram",
+                "synthetic",
+                "extension-api-explorer"
+            ],
+            "name": "All",
+            "url": "https://localhost:19999/api/4.0/model_sets/1",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "url": "https://localhost:19999/api/4.0/roles/636",
+        "users_url": "https://localhost:19999/api/4.0/roles/636/users",
+        "can": {
+            "create": true,
+            "delete": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "edit_in_ui": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "id": "657",
+        "name": "Marketplace Automation (0a6825)",
+        "permission_set": {
+            "built_in": false,
+            "id": "658",
+            "all_access": false,
+            "name": "Marketplace Automation (0a6825)",
+            "permissions": [
+                "deploy",
+                "develop",
+                "manage_models"
+            ],
+            "url": "https://localhost:19999/api/4.0/permission_sets/658",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "model_set": {
+            "built_in": true,
+            "id": "1",
+            "all_access": true,
+            "models": [
+                "ga4",
+                "synthetic_data",
+                "data-dictionary",
+                "lookml-diagram",
+                "synthetic",
+                "extension-api-explorer"
+            ],
+            "name": "All",
+            "url": "https://localhost:19999/api/4.0/model_sets/1",
+            "can": {
+                "create": true,
+                "delete": true,
+                "update": true,
+                "index": true,
+                "search": true,
+                "show": true
+            }
+        },
+        "url": "https://localhost:19999/api/4.0/roles/657",
+        "users_url": "https://localhost:19999/api/4.0/roles/657/users",
+        "can": {
+            "create": true,
+            "delete": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "edit_in_ui": true,
+            "view_in_ui": true
+        }
+    }
+]

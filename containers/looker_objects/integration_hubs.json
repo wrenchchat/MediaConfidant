@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "url": "https://actions-gcp.looker.com",
+        "label": "https://actions-gcp.looker.com",
+        "fetch_error_message": null,
+        "has_authorization_token": true,
+        "legal_agreement_text": "Use of Action Hub is at your discretion and is not material to the operation of the Looker Software or Services. Data may be processed outside of your Looker environment and hosted region. End Users may activate Looker Action via Action Hub to send Customer Data to third party services chosen by the End User. Use of third party services that are connected to Looker are separate and independent from Looker and use of those services are subject to those applicable third party terms and privacy policy.",
+        "official": true,
+        "legal_agreement_signed": false,
+        "legal_agreement_required": true,
+        "can": {
+            "accept_legal_agreement": true,
+            "create": true,
+            "destroy": true,
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    }
+]

@@ -1,0 +1,402 @@
+[
+    {
+        "created_at": 1706202560,
+        "id": "1",
+        "model_name": "ga4",
+        "name": "bqml_datagroup",
+        "stale_before": 1724665975,
+        "trigger_check_at": 1724771134,
+        "trigger_error": null,
+        "trigger_value": "34",
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1706202560,
+        "id": "2",
+        "model_name": "ga4",
+        "name": "attribution_channel",
+        "stale_before": 1724666039,
+        "trigger_check_at": 1724771134,
+        "trigger_error": null,
+        "trigger_value": "8",
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1706202561,
+        "id": "3",
+        "model_name": "ga4",
+        "name": "ga4_main_datagroup",
+        "stale_before": 1724716846,
+        "trigger_check_at": 1724771135,
+        "trigger_error": null,
+        "trigger_value": "2024-08-27",
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1706202561,
+        "id": "4",
+        "model_name": "ga4",
+        "name": "ga4_default_datagroup",
+        "stale_before": 1724720478,
+        "trigger_check_at": 1724771135,
+        "trigger_error": null,
+        "trigger_value": "19962.0",
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1706202561,
+        "id": "5",
+        "model_name": "block_google_ads_transfer_new_v2",
+        "name": "daily",
+        "stale_before": 1723880858,
+        "trigger_check_at": 1723882056,
+        "trigger_error": null,
+        "trigger_value": "2024-08-17",
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1708108807,
+        "id": "6",
+        "model_name": "february15test",
+        "name": "february15test_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1708115197,
+        "id": "7",
+        "model_name": "ga4",
+        "name": "ga4_attribution_channel",
+        "stale_before": 1724665975,
+        "trigger_check_at": 1724771136,
+        "trigger_error": null,
+        "trigger_value": "1",
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1708116413,
+        "id": "8",
+        "model_name": "google_analytics_360_v2",
+        "name": "bqml_datagroup",
+        "stale_before": 1719792057,
+        "trigger_check_at": 1720802337,
+        "trigger_error": null,
+        "trigger_value": "7",
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1709068217,
+        "id": "9",
+        "model_name": "february_26_test",
+        "name": "february_26_test_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1710883643,
+        "id": "10",
+        "model_name": "mcwaltbaselineproject1",
+        "name": "mcwaltbaselineproject1_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1721007505,
+        "id": "11",
+        "model_name": "core_hub",
+        "name": "core_hub_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1721024297,
+        "id": "12",
+        "model_name": "cyberdyne",
+        "name": "core_hub_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1721148700,
+        "id": "13",
+        "model_name": "gcp_billing_block",
+        "name": "billing_datagroup",
+        "stale_before": 1721884823,
+        "trigger_check_at": 1723480173,
+        "trigger_error": "Query execution failed:  - Access Denied: Table instance:billing.gcp_billing_export_public: User does not have permission to query table instance:billing.gcp_billing_export_public, or perhaps it does not exist.",
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1721148701,
+        "id": "14",
+        "model_name": "gcp_billing_block",
+        "name": "pricing_datagroup",
+        "stale_before": 1721341832,
+        "trigger_check_at": 1723480174,
+        "trigger_error": "Query execution failed:  - Access Denied: Table instance:billing.cloud_pricing_export: User does not have permission to query table instance:billing.cloud_pricing_export, or perhaps it does not exist.",
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1721149310,
+        "id": "15",
+        "model_name": "block_gcp_audit_logs_v2",
+        "name": "daily_group",
+        "stale_before": 1723479575,
+        "trigger_check_at": 1723480172,
+        "trigger_error": null,
+        "trigger_value": "2024-08-12",
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1721149311,
+        "id": "16",
+        "model_name": "block-github-v2",
+        "name": "block_github_commits_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1723343630,
+        "id": "17",
+        "model_name": "youfit_gyms",
+        "name": "youfit_gyms_default_datagroup",
+        "stale_before": 1723686135,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1723651693,
+        "id": "18",
+        "model_name": "vendors",
+        "name": "vendors_default_datagroup",
+        "stale_before": 1723686134,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1723855555,
+        "id": "19",
+        "model_name": "demo",
+        "name": "demo_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1723857075,
+        "id": "20",
+        "model_name": "marketplace_google-ads",
+        "name": "marketplace_google-ads_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1723865317,
+        "id": "21",
+        "model_name": "google_ads",
+        "name": "marketplace_google-ads_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1723870494,
+        "id": "22",
+        "model_name": "marketplace_ga4",
+        "name": "marketplace_ga4_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1723879944,
+        "id": "23",
+        "model_name": "google_ads",
+        "name": "marketplace_google_ads_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1724644360,
+        "id": "24",
+        "model_name": "synthetic_data",
+        "name": "synthetic_data_default_datagroup",
+        "stale_before": 1724665974,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "created_at": 1724670538,
+        "id": "25",
+        "model_name": "synthetic",
+        "name": "synthetic_default_datagroup",
+        "stale_before": null,
+        "trigger_check_at": null,
+        "trigger_error": null,
+        "trigger_value": null,
+        "triggered_at": null,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    }
+]

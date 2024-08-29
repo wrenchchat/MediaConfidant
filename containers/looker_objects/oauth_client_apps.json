@@ -1,0 +1,168 @@
+[
+    {
+        "client_guid": "com.looker.droid",
+        "activated_users": [],
+        "display_name": "Looker Android",
+        "description": "Looker's Android app.",
+        "enabled": true,
+        "type": "MOBILE",
+        "can": {
+            "activate_app_user": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "deactivate_app_user": true,
+            "index": true,
+            "show": true,
+            "view": true
+        }
+    },
+    {
+        "client_guid": "com.looker.ios",
+        "activated_users": [
+            {
+                "id": "2",
+                "first_name": "michael",
+                "last_name": "strachan",
+                "avatar_url": "https://gravatar.lookercdn.com/avatar/f7c88a7b12d95adc307d2911e6f5c10b?s=156&d=blank",
+                "display_name": "michael strachan",
+                "url": "https://localhost:19999/api/4.0/users/2",
+                "can": {
+                    "index": true,
+                    "index_details": true,
+                    "show": true,
+                    "show_creds": true,
+                    "show_details": true,
+                    "sudo": true,
+                    "update_creds": true,
+                    "view_in_ui": true
+                }
+            }
+        ],
+        "display_name": "Looker iOS",
+        "description": "Looker's iOS app.",
+        "enabled": true,
+        "type": "MOBILE",
+        "can": {
+            "activate_app_user": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "deactivate_app_user": true,
+            "index": true,
+            "show": true,
+            "view": true
+        }
+    },
+    {
+        "client_guid": "com.looker.google.gal.analytics",
+        "activated_users": [],
+        "display_name": "Data Studio",
+        "description": "Google Data Studio datasource connector.",
+        "enabled": false,
+        "type": "BI_CONNECTOR",
+        "can": {
+            "activate_app_user": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "deactivate_app_user": true,
+            "index": true,
+            "show": true,
+            "view": true
+        }
+    },
+    {
+        "client_guid": "com.looker.google.gal.sheets",
+        "activated_users": [],
+        "display_name": "Connected Sheets",
+        "description": "Google Sheets datasource connector.",
+        "enabled": false,
+        "type": "BI_CONNECTOR",
+        "can": {
+            "activate_app_user": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "deactivate_app_user": true,
+            "index": true,
+            "show": true,
+            "view": true
+        }
+    },
+    {
+        "client_guid": "com.looker.powerbi",
+        "activated_users": [],
+        "display_name": "Power BI",
+        "description": "Microsoft Power BI datasource connector.",
+        "enabled": false,
+        "type": "BI_CONNECTOR",
+        "can": {
+            "activate_app_user": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "deactivate_app_user": true,
+            "index": true,
+            "show": true,
+            "view": true
+        }
+    },
+    {
+        "client_guid": "494662760281-kaeh9q5a5vfpvdd90baokvo4slsqbvrt.apps.googleusercontent.com",
+        "activated_users": [],
+        "redirect_uri": "https://analytics.mediaconfidant.com/external_oauth/redirect",
+        "display_name": "analytics.mediaconfidant.com",
+        "description": "mediaconfidant_analytics_base_reportin",
+        "enabled": false,
+        "type": null,
+        "group_id": null,
+        "tokens_invalid_before": "2024-02-05T04:02:35.000Z",
+        "can": {
+            "activate_app_user": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "deactivate_app_user": true,
+            "index": true,
+            "show": true,
+            "view": true
+        }
+    },
+    {
+        "client_guid": "com.looker.laaidp",
+        "activated_users": [],
+        "display_name": "LaaIdP",
+        "description": "LaaIdP Client.",
+        "enabled": true,
+        "type": "OTHER",
+        "can": {
+            "activate_app_user": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "deactivate_app_user": true,
+            "index": true,
+            "show": true,
+            "view": true
+        }
+    },
+    {
+        "client_guid": "com.looker.flutter",
+        "activated_users": [],
+        "display_name": "Looker Flutter",
+        "description": "Looker's Flutter app.",
+        "enabled": true,
+        "type": "MOBILE",
+        "can": {
+            "activate_app_user": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "deactivate_app_user": true,
+            "index": true,
+            "show": true,
+            "view": true
+        }
+    }
+]

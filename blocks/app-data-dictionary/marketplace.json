@@ -1,0 +1,21 @@
+{
+  "label": "Data Dictionary",
+  "category_label": "Applications",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/app-icons/data_dictionary_icon.svg",
+    "tagline": "Find the fields and metrics you need for analysis",
+    "brand_color": "#fe007d"
+  },
+  "constants": {
+    "CONNECTION_NAME": {
+      "label": "Connection Name",
+      "value_constraint": "connection"
+    }
+  },
+  "models": [
+    {
+      "name": "data-dictionary",
+      "connection_constant": "CONNECTION_NAME"
+    }
+  ]
+}

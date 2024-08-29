@@ -1,0 +1,8 @@
+{
+  "defaultSchema": "synthetic",  // Default schema for synthdata.sqlx
+  "defaultDatabase": "doit-new-project",
+  "assertionSchema": "assertions",
+  "tablePrefix": "synthetic_",  // Prefix for synthetic schema tables
+  "warehouse": "bigquery",
+  "projectId": "doit-new-project"
+}

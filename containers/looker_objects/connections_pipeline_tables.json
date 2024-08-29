@@ -1,0 +1,403 @@
+[
+    {
+        "name": "customers",
+        "is_default": true,
+        "tables": [
+            {
+                "name": "used_permissions_analysis",
+                "sql_escaped_name": "`doit-new-project.customers.used_permissions_analysis`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.customers.used_permissions_analysis` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.customers.used_permissions_analysis`"
+                    }
+                ]
+            },
+            {
+                "name": "used_permissions_analysis_result",
+                "sql_escaped_name": "`doit-new-project.customers.used_permissions_analysis_result`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.customers.used_permissions_analysis_result` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.customers.used_permissions_analysis_result`"
+                    }
+                ]
+            },
+            {
+                "name": "user_id_group_view",
+                "sql_escaped_name": "`doit-new-project.customers.user_id_group_view`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.customers.user_id_group_view` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.customers.user_id_group_view`"
+                    }
+                ]
+            },
+            {
+                "name": "vendors",
+                "sql_escaped_name": "`doit-new-project.customers.vendors`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.customers.vendors` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.customers.vendors`"
+                    }
+                ]
+            },
+            {
+                "name": "kmeans_model",
+                "sql_escaped_name": "`doit-new-project.customers.kmeans_model`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.customers.kmeans_model` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.customers.kmeans_model`"
+                    }
+                ]
+            },
+            {
+                "name": "linear_regression_model",
+                "sql_escaped_name": "`doit-new-project.customers.linear_regression_model`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.customers.linear_regression_model` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.customers.linear_regression_model`"
+                    }
+                ]
+            },
+            {
+                "name": "logistic_regression_model",
+                "sql_escaped_name": "`doit-new-project.customers.logistic_regression_model`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.customers.logistic_regression_model` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.customers.logistic_regression_model`"
+                    }
+                ]
+            },
+            {
+                "name": "random_forest_model",
+                "sql_escaped_name": "`doit-new-project.customers.random_forest_model`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.customers.random_forest_model` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.customers.random_forest_model`"
+                    }
+                ]
+            },
+            {
+                "name": "time_series_model",
+                "sql_escaped_name": "`doit-new-project.customers.time_series_model`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.customers.time_series_model` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.customers.time_series_model`"
+                    }
+                ]
+            }
+        ],
+        "table_limit_hit": false
+    },
+    {
+        "name": "looker_scratch",
+        "is_default": false,
+        "tables": [
+            {
+                "name": "connection_reg_r3",
+                "sql_escaped_name": "`doit-new-project.looker_scratch.connection_reg_r3`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.looker_scratch.connection_reg_r3` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.looker_scratch.connection_reg_r3`"
+                    }
+                ]
+            }
+        ],
+        "table_limit_hit": false
+    },
+    {
+        "name": "synthetic",
+        "is_default": false,
+        "tables": [
+            {
+                "name": "synthdata",
+                "sql_escaped_name": "`doit-new-project.synthetic.synthdata`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.synthdata` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.synthdata`"
+                    }
+                ]
+            },
+            {
+                "name": "kmeans_campaigns",
+                "sql_escaped_name": "`doit-new-project.synthetic.kmeans_campaigns`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.kmeans_campaigns` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.kmeans_campaigns`"
+                    }
+                ]
+            },
+            {
+                "name": "linear_regression_clicks_t1000",
+                "sql_escaped_name": "`doit-new-project.synthetic.linear_regression_clicks_t1000`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.linear_regression_clicks_t1000` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.linear_regression_clicks_t1000`"
+                    }
+                ]
+            },
+            {
+                "name": "linear_regression_clicks_t800",
+                "sql_escaped_name": "`doit-new-project.synthetic.linear_regression_clicks_t800`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.linear_regression_clicks_t800` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.linear_regression_clicks_t800`"
+                    }
+                ]
+            },
+            {
+                "name": "logistic_regression_buys_t1000",
+                "sql_escaped_name": "`doit-new-project.synthetic.logistic_regression_buys_t1000`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.logistic_regression_buys_t1000` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.logistic_regression_buys_t1000`"
+                    }
+                ]
+            },
+            {
+                "name": "logistic_regression_buys_t800",
+                "sql_escaped_name": "`doit-new-project.synthetic.logistic_regression_buys_t800`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.logistic_regression_buys_t800` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.logistic_regression_buys_t800`"
+                    }
+                ]
+            },
+            {
+                "name": "timeseries_buys_t1000",
+                "sql_escaped_name": "`doit-new-project.synthetic.timeseries_buys_t1000`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.timeseries_buys_t1000` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.timeseries_buys_t1000`"
+                    }
+                ]
+            },
+            {
+                "name": "timeseries_buys_t800",
+                "sql_escaped_name": "`doit-new-project.synthetic.timeseries_buys_t800`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.timeseries_buys_t800` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.timeseries_buys_t800`"
+                    }
+                ]
+            },
+            {
+                "name": "xgboost_buys_t1000",
+                "sql_escaped_name": "`doit-new-project.synthetic.xgboost_buys_t1000`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.xgboost_buys_t1000` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.xgboost_buys_t1000`"
+                    }
+                ]
+            },
+            {
+                "name": "xgboost_buys_t800",
+                "sql_escaped_name": "`doit-new-project.synthetic.xgboost_buys_t800`",
+                "schema_name": "",
+                "rows": null,
+                "external": null,
+                "snippets": [
+                    {
+                        "name": "select_10",
+                        "label": "Select 10",
+                        "sql": "SELECT * FROM `doit-new-project.synthetic.xgboost_buys_t800` LIMIT 10"
+                    },
+                    {
+                        "name": "count",
+                        "label": "Count",
+                        "sql": "SELECT COUNT(*) FROM `doit-new-project.synthetic.xgboost_buys_t800`"
+                    }
+                ]
+            }
+        ],
+        "table_limit_hit": false
+    }
+]

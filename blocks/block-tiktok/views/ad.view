@@ -1,0 +1,15 @@
+view: ad {
+derived_table: {
+  sql: SELECT AD_ID,AD_NAME,ADGROUP_ID,CAMPAIGN_ID,
+       ROW_NUMBER() OVER (PARTITION BY AD_ID ORDER BY CREATE_TIME) AS row_num
+       FROM
+       @{TIKTOK_SCHEMA}.AD_HISTORY
+       QUALIFY row_num = 1 ;;
+}
+
+dimension: ad_id {}
+dimension: ad_name {}
+dimension: adgroup_id {}
+dimension: campaign_id {}
+
+ }

@@ -1,0 +1,401 @@
+# The name of this view in Looker is "Adgroup History"
+view: adgroup_history {
+  # The sql_table_name parameter indicates the underlying database table
+  # to be used for all fields in this view.
+  sql_table_name: @{TIKTOK_SCHEMA}."ADGROUP_HISTORY"
+    ;;
+  # No primary key is defined for this view. In order to join this view in an Explore,
+  # define primary_key: yes on a dimension that has no repeated values.
+
+  # Here's what a typical dimension looks like in LookML.
+  # A dimension is a groupable field that can be used to filter query results.
+  # This dimension will be called " File" in Explore.
+
+  dimension: _file {
+    type: string
+    sql: ${TABLE}."_FILE" ;;
+  }
+
+  dimension: _fivetran_synced {
+    type: string
+    sql: ${TABLE}."_FIVETRAN_SYNCED" ;;
+  }
+
+  dimension: _line {
+    type: number
+    sql: ${TABLE}."_LINE" ;;
+  }
+
+  # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
+  # measures for this dimension, but you can also add measures of many different aggregates.
+  # Click on the type parameter to see all the options in the Quick Help panel on the right.
+
+  measure: total__line {
+    type: sum
+    sql: ${_line} ;;
+  }
+
+  measure: average__line {
+    type: average
+    sql: ${_line} ;;
+  }
+
+  dimension: action_categories {
+    type: string
+    sql: ${TABLE}."ACTION_CATEGORIES" ;;
+  }
+
+  dimension: action_days {
+    type: string
+    sql: ${TABLE}."ACTION_DAYS" ;;
+  }
+
+  dimension: adgroup_id {
+    type: number
+    sql: ${TABLE}."ADGROUP_ID" ;;
+  }
+
+  dimension: adgroup_name {
+    type: string
+    sql: ${TABLE}."ADGROUP_NAME" ;;
+  }
+
+  dimension: advertiser_id {
+    type: number
+    # hidden: yes
+    sql: ${TABLE}."ADVERTISER_ID" ;;
+  }
+
+  dimension: age {
+    type: string
+    sql: ${TABLE}."AGE" ;;
+  }
+
+  dimension: android_osv {
+    type: string
+    sql: ${TABLE}."ANDROID_OSV" ;;
+  }
+
+  dimension: app_download_url {
+    type: string
+    sql: ${TABLE}."APP_DOWNLOAD_URL" ;;
+  }
+
+  dimension: app_id {
+    type: string
+    sql: ${TABLE}."APP_ID" ;;
+  }
+
+  dimension: app_name {
+    type: string
+    sql: ${TABLE}."APP_NAME" ;;
+  }
+
+  dimension: app_type {
+    type: string
+    sql: ${TABLE}."APP_TYPE" ;;
+  }
+
+  dimension: audience {
+    type: string
+    sql: ${TABLE}."AUDIENCE" ;;
+  }
+
+  dimension: audience_type {
+    type: string
+    sql: ${TABLE}."AUDIENCE_TYPE" ;;
+  }
+
+  dimension: bid {
+    type: number
+    value_format_name: id
+    sql: ${TABLE}."BID" ;;
+  }
+
+  dimension: bid_type {
+    type: string
+    sql: ${TABLE}."BID_TYPE" ;;
+  }
+
+  dimension: billing_event {
+    type: string
+    sql: ${TABLE}."BILLING_EVENT" ;;
+  }
+
+  dimension: budget {
+    type: number
+    sql: ${TABLE}."BUDGET" ;;
+  }
+
+  dimension: budget_mode {
+    type: string
+    sql: ${TABLE}."BUDGET_MODE" ;;
+  }
+
+  dimension: campaign_id {
+    type: number
+    sql: ${TABLE}."CAMPAIGN_ID" ;;
+  }
+
+  dimension: carriers {
+    type: string
+    sql: ${TABLE}."CARRIERS" ;;
+  }
+
+  dimension: category {
+    type: number
+    sql: ${TABLE}."CATEGORY" ;;
+  }
+
+  dimension: click_tracking_url {
+    type: string
+    sql: ${TABLE}."CLICK_TRACKING_URL" ;;
+  }
+
+  dimension: connection_type {
+    type: string
+    sql: ${TABLE}."CONNECTION_TYPE" ;;
+  }
+
+  dimension: conversion_bid {
+    type: number
+    value_format_name: id
+    sql: ${TABLE}."CONVERSION_BID" ;;
+  }
+
+  dimension: cpv_video_duration {
+    type: string
+    sql: ${TABLE}."CPV_VIDEO_DURATION" ;;
+  }
+
+  dimension: create_time {
+    type: string
+    sql: ${TABLE}."CREATE_TIME" ;;
+  }
+
+  dimension: creative_material_mode {
+    type: string
+    sql: ${TABLE}."CREATIVE_MATERIAL_MODE" ;;
+  }
+
+  dimension: dayparting {
+    type: string
+    sql: ${TABLE}."DAYPARTING" ;;
+  }
+
+  dimension: deep_bid_type {
+    type: string
+    sql: ${TABLE}."DEEP_BID_TYPE" ;;
+  }
+
+  dimension: deep_cpabid {
+    type: number
+    value_format_name: id
+    sql: ${TABLE}."DEEP_CPABID" ;;
+  }
+
+  dimension: deep_external_action {
+    type: string
+    sql: ${TABLE}."DEEP_EXTERNAL_ACTION" ;;
+  }
+
+  dimension: display_name {
+    type: string
+    sql: ${TABLE}."DISPLAY_NAME" ;;
+  }
+
+  dimension: enable_inventory_filter {
+    type: yesno
+    sql: ${TABLE}."ENABLE_INVENTORY_FILTER" ;;
+  }
+
+  dimension: excluded_audience {
+    type: string
+    sql: ${TABLE}."EXCLUDED_AUDIENCE" ;;
+  }
+
+  dimension: external_action {
+    type: string
+    sql: ${TABLE}."EXTERNAL_ACTION" ;;
+  }
+
+  dimension: fallback_type {
+    type: string
+    sql: ${TABLE}."FALLBACK_TYPE" ;;
+  }
+
+  dimension: frequency {
+    type: number
+    sql: ${TABLE}."FREQUENCY" ;;
+  }
+
+  dimension: frequency_schedule {
+    type: number
+    sql: ${TABLE}."FREQUENCY_SCHEDULE" ;;
+  }
+
+  dimension: gender {
+    type: string
+    sql: ${TABLE}."GENDER" ;;
+  }
+
+  dimension: impression_tracking_url {
+    type: string
+    sql: ${TABLE}."IMPRESSION_TRACKING_URL" ;;
+  }
+
+  dimension: interest_category_v_2 {
+    type: string
+    sql: ${TABLE}."INTEREST_CATEGORY_V_2" ;;
+  }
+
+  dimension: ios_osv {
+    type: string
+    sql: ${TABLE}."IOS_OSV" ;;
+  }
+
+  dimension: is_comment_disable {
+    type: number
+    sql: ${TABLE}."IS_COMMENT_DISABLE" ;;
+  }
+
+  dimension: is_hfss {
+    type: yesno
+    sql: ${TABLE}."IS_HFSS" ;;
+  }
+
+  dimension: is_new_structure {
+    type: yesno
+    sql: ${TABLE}."IS_NEW_STRUCTURE" ;;
+  }
+
+  dimension: keywords {
+    type: string
+    sql: ${TABLE}."KEYWORDS" ;;
+  }
+
+  dimension: landing_page_url {
+    type: string
+    sql: ${TABLE}."LANDING_PAGE_URL" ;;
+  }
+
+  dimension: languages {
+    type: string
+    sql: ${TABLE}."LANGUAGES" ;;
+  }
+
+  dimension: location {
+    type: string
+    sql: ${TABLE}."LOCATION" ;;
+  }
+
+  dimension: open_url {
+    type: string
+    sql: ${TABLE}."OPEN_URL" ;;
+  }
+
+  dimension: open_url_type {
+    type: string
+    sql: ${TABLE}."OPEN_URL_TYPE" ;;
+  }
+
+  dimension: operation_system {
+    type: string
+    sql: ${TABLE}."OPERATION_SYSTEM" ;;
+  }
+
+  dimension: opt_status {
+    type: string
+    sql: ${TABLE}."OPT_STATUS" ;;
+  }
+
+  dimension: optimize_goal {
+    type: string
+    sql: ${TABLE}."OPTIMIZE_GOAL" ;;
+  }
+
+  dimension: pacing {
+    type: string
+    sql: ${TABLE}."PACING" ;;
+  }
+
+  dimension: package {
+    type: string
+    sql: ${TABLE}."PACKAGE" ;;
+  }
+
+  dimension: pangle_block_app_list_id {
+    type: string
+    sql: ${TABLE}."PANGLE_BLOCK_APP_LIST_ID" ;;
+  }
+
+  dimension: pixel_id {
+    type: number
+    sql: ${TABLE}."PIXEL_ID" ;;
+  }
+
+  dimension: placement {
+    type: string
+    sql: ${TABLE}."PLACEMENT" ;;
+  }
+
+  dimension: placement_type {
+    type: string
+    sql: ${TABLE}."PLACEMENT_TYPE" ;;
+  }
+
+  dimension: profile_image {
+    type: string
+    sql: ${TABLE}."PROFILE_IMAGE" ;;
+  }
+
+  dimension: schedule_end_time {
+    type: string
+    sql: ${TABLE}."SCHEDULE_END_TIME" ;;
+  }
+
+  dimension: schedule_start_time {
+    type: string
+    sql: ${TABLE}."SCHEDULE_START_TIME" ;;
+  }
+
+  dimension: schedule_type {
+    type: string
+    sql: ${TABLE}."SCHEDULE_TYPE" ;;
+  }
+
+  dimension: skip_learning_phase {
+    type: number
+    sql: ${TABLE}."SKIP_LEARNING_PHASE" ;;
+  }
+
+  dimension: statistic_type {
+    type: string
+    sql: ${TABLE}."STATISTIC_TYPE" ;;
+  }
+
+  dimension: status {
+    type: string
+    sql: ${TABLE}."STATUS" ;;
+  }
+
+  dimension: updated_at {
+    type: string
+    sql: ${TABLE}."UPDATED_AT" ;;
+  }
+
+  dimension: video_actions {
+    type: string
+    sql: ${TABLE}."VIDEO_ACTIONS" ;;
+  }
+
+  dimension: video_download {
+    type: string
+    sql: ${TABLE}."VIDEO_DOWNLOAD" ;;
+  }
+
+  measure: count {
+    type: count
+    drill_fields: [display_name, adgroup_name, app_name, advertiser.name, advertiser.id]
+  }
+}

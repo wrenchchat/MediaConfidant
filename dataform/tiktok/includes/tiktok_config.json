@@ -1,0 +1,28 @@
+{
+  "warehouse": "bigquery",
+  "defaultSchema": "tiktok_ads",
+  "defaultDatabase": "your_bigquery_project_id",
+  "assertionSchema": "dataform_assertions",
+  "defaultLocation": "US",
+  "dataformCoreVersion": "1.0.0",
+  "gcloudProjectId": "your_gcp_project_id",
+  "schedule": {
+    "default": {
+      "cron": "0 3 * * *",
+      "options": {
+        "incremental": true
+      }
+    }
+  },
+  "databaseSuffix": "",
+  "defaultConfig": {
+    "typePrefix": "",
+    "writeDisposition": "WRITE_TRUNCATE",
+    "partitionBy": "",
+    "clusterBy": []
+  },
+  "metadata": {
+    "source": "tiktok_ads",
+    "tags": ["tiktok", "ads", "marketing"]
+  }
+}

@@ -1,0 +1,17 @@
+config {
+  type: "table",
+  schema: "tiktok"
+}
+
+select
+  creative_id,
+  ad_id,
+  creative_type,
+  creative_status,
+  creative_url,
+  creative_dimensions,
+  creative_duration,
+  created_time,
+  updated_time
+from
+  raw_ad_creative_data

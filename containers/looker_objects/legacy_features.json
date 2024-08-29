@@ -1,0 +1,59 @@
+[
+    {
+        "id": "legacy_lookml_runtime",
+        "name": "Use Legacy LookML Runtime",
+        "description": "The Aragonite runtime provides faster LookML validation and more performant SQL query writing, among other performance improvements. When enabled, this Legacy feature defaults all LookML projects on the instance to Legacy LookML Runtime. When this feature is disabled, all LookML projects on the instance will use the New LookML Runtime.",
+        "enabled_locally": false,
+        "enabled": false,
+        "disallowed_as_of_version": "24.2",
+        "disable_on_upgrade_to_version": "22.14",
+        "end_of_life_version": "24.2",
+        "documentation_url": "https://cloud.google.com/looker/docs/legacy-feature-schedule#new_lookml_runtime",
+        "approximate_disable_date": "2022-08-08T00:00:00.000+00:00",
+        "approximate_end_of_life_date": "2024-02-05T00:00:00.000+00:00",
+        "has_disabled_on_upgrade": true,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "id": "totals_excluded_from_stacked_vis",
+        "name": "Always hide Row Totals series from stacked charts",
+        "description": "When enabled, this Legacy feature always hides the Row Totals series from stacked chart visualizations, regardless of whether the Hide from visualization option is set on the Row Totals column gear menu in the Data tab. When this feature is disabled, stacked charts will include the Row Totals series by default, but selecting Hide from visualization on the Row totals column will remove the Row Totals series from the chart.",
+        "enabled_locally": false,
+        "enabled": false,
+        "disallowed_as_of_version": "23.20",
+        "disable_on_upgrade_to_version": "22.20",
+        "end_of_life_version": "23.20",
+        "documentation_url": "https://cloud.google.com/looker/docs/legacy-feature-schedule#always_hide_row_totals_series_from_stacked_charts",
+        "approximate_disable_date": "2022-11-07T00:00:00.000+00:00",
+        "approximate_end_of_life_date": "2023-11-06T00:00:00.000+00:00",
+        "has_disabled_on_upgrade": true,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    },
+    {
+        "id": "allow_legacy_maps",
+        "name": "Allow Legacy Maps",
+        "description": "When disabled, any map that was previously using Maps (Legacy) will now use Google Maps. When enabled, any map visualization that was originally created using 'Maps (Legacy)' will revert and no longer use Google Maps.",
+        "enabled_locally": false,
+        "enabled": false,
+        "disallowed_as_of_version": "24.10",
+        "disable_on_upgrade_to_version": "24.8",
+        "end_of_life_version": "24.16",
+        "documentation_url": "https://cloud.google.com/looker/docs/legacy-feature-schedule#allow_legacy_maps",
+        "approximate_disable_date": "2024-05-06T00:00:00.000+00:00",
+        "approximate_end_of_life_date": "2024-09-09T00:00:00.000+00:00",
+        "has_disabled_on_upgrade": true,
+        "can": {
+            "index": true,
+            "show": true,
+            "update": true
+        }
+    }
+]

@@ -1,0 +1,18 @@
+view: adgroup {
+derived_table: {
+
+  sql: SELECT ADGROUP_ID,ADGROUP_NAME,
+       ROW_NUMBER() OVER (PARTITION BY ADGROUP_ID ORDER BY CREATE_TIME) AS row_num
+       FROM
+       @{TIKTOK_SCHEMA}.ADGROUP_HISTORY
+       QUALIFY row_num = 1;;
+
+}
+
+dimension: adgroup_id {}
+dimension: adgroup_name {}
+  dimension: country {
+    type: string
+    sql: left(split_part(${adgroup_name},'_',2),2) ;;
+  }
+ }

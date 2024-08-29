@@ -1,0 +1,113 @@
+# The name of this view in Looker is "Campaign History"
+view: campaign_history {
+  # The sql_table_name parameter indicates the underlying database table
+  # to be used for all fields in this view.
+  sql_table_name: @{CONNECTION_NAME}."CAMPAIGN_HISTORY"
+    ;;
+  # No primary key is defined for this view. In order to join this view in an Explore,
+  # define primary_key: yes on a dimension that has no repeated values.
+
+  # Here's what a typical dimension looks like in LookML.
+  # A dimension is a groupable field that can be used to filter query results.
+  # This dimension will be called " File" in Explore.
+
+  dimension: _file {
+    type: string
+    sql: ${TABLE}."_FILE" ;;
+  }
+
+  dimension: _fivetran_synced {
+    type: string
+    sql: ${TABLE}."_FIVETRAN_SYNCED" ;;
+  }
+
+  dimension: _line {
+    type: number
+    sql: ${TABLE}."_LINE" ;;
+  }
+
+  # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
+  # measures for this dimension, but you can also add measures of many different aggregates.
+  # Click on the type parameter to see all the options in the Quick Help panel on the right.
+
+  measure: total__line {
+    type: sum
+    sql: ${_line} ;;
+  }
+
+  measure: average__line {
+    type: average
+    sql: ${_line} ;;
+  }
+
+  dimension: advertiser_id {
+    type: number
+    # hidden: yes
+    sql: ${TABLE}."ADVERTISER_ID" ;;
+  }
+
+  dimension: budget {
+    type: number
+    sql: ${TABLE}."BUDGET" ;;
+  }
+
+  dimension: budget_mode {
+    type: string
+    sql: ${TABLE}."BUDGET_MODE" ;;
+  }
+
+  dimension: campaign_id {
+    type: number
+    sql: ${TABLE}."CAMPAIGN_ID" ;;
+  }
+
+  dimension: campaign_name {
+    type: string
+    sql: ${TABLE}."CAMPAIGN_NAME" ;;
+  }
+
+  dimension: campaign_type {
+    type: string
+    sql: ${TABLE}."CAMPAIGN_TYPE" ;;
+  }
+
+  dimension: create_time {
+    type: string
+    sql: ${TABLE}."CREATE_TIME" ;;
+  }
+
+  dimension: is_new_structure {
+    type: yesno
+    sql: ${TABLE}."IS_NEW_STRUCTURE" ;;
+  }
+
+  dimension: objective_type {
+    type: string
+    sql: ${TABLE}."OBJECTIVE_TYPE" ;;
+  }
+
+  dimension: opt_status {
+    type: string
+    sql: ${TABLE}."OPT_STATUS" ;;
+  }
+
+  dimension: split_test_variable {
+    type: string
+    sql: ${TABLE}."SPLIT_TEST_VARIABLE" ;;
+  }
+
+  dimension: status {
+    type: string
+    sql: ${TABLE}."STATUS" ;;
+  }
+
+  dimension: updated_at {
+    type: string
+    sql: ${TABLE}."UPDATED_AT" ;;
+  }
+
+  measure: count {
+    type: count
+    drill_fields: [campaign_name, advertiser.name, advertiser.id]
+  }
+}

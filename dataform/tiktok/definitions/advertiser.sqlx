@@ -1,0 +1,14 @@
+config {
+  type: "table",
+  schema: "tiktok"
+}
+
+select
+  advertiser_id,
+  advertiser_name,
+  advertiser_status,
+  created_time,
+  updated_time,
+  total_spend
+from
+  raw_advertiser_data

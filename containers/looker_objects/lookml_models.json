@@ -1,0 +1,252 @@
+[
+    {
+        "has_content": false,
+        "label": "Vendors",
+        "name": "vendors",
+        "project_name": "vendors",
+        "unlimited_db_connections": false,
+        "allowed_db_connection_names": [
+            "pipeline"
+        ],
+        "explores": [],
+        "can": {
+            "create": true,
+            "destroy": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "update_field_unlimited_db_connections": true
+        }
+    },
+    {
+        "has_content": true,
+        "label": "Synthetic",
+        "name": "synthetic",
+        "project_name": "synthetic",
+        "unlimited_db_connections": true,
+        "allowed_db_connection_names": [
+            "pipeline",
+            "empyrean-backup-411421",
+            "pipeline_synthetic"
+        ],
+        "explores": [
+            {
+                "description": null,
+                "label": "Synthdata",
+                "hidden": false,
+                "group_label": "Synthetic",
+                "name": "synthdata"
+            }
+        ],
+        "can": {
+            "create": true,
+            "destroy": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "update_field_unlimited_db_connections": true
+        }
+    },
+    {
+        "has_content": true,
+        "label": "Google Analytics 4",
+        "name": "ga4",
+        "project_name": "ga4",
+        "unlimited_db_connections": false,
+        "allowed_db_connection_names": [
+            "empyrean-backup-411421"
+        ],
+        "explores": [
+            {
+                "description": null,
+                "label": "Model Explanation",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "model_explanation"
+            },
+            {
+                "description": null,
+                "label": "Category Attribution",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "category_attribution"
+            },
+            {
+                "description": null,
+                "label": "Evaluation",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "evaluation"
+            },
+            {
+                "description": null,
+                "label": "Future Purchase Model Evaluation",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "future_purchase_model_evaluation"
+            },
+            {
+                "description": null,
+                "label": "Future Purchase Model Training Info",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "future_purchase_model_training_info"
+            },
+            {
+                "description": null,
+                "label": "Roc Curve",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "roc_curve"
+            },
+            {
+                "description": null,
+                "label": "Confusion Matrix",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "confusion_matrix"
+            },
+            {
+                "description": null,
+                "label": "Feature Importance",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "feature_importance"
+            },
+            {
+                "description": null,
+                "label": "Future Purchase Prediction",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "future_purchase_prediction"
+            },
+            {
+                "description": null,
+                "label": "Pred History",
+                "hidden": false,
+                "group_label": "Google Analytics 4",
+                "name": "pred_history"
+            },
+            {
+                "description": null,
+                "label": "Incremental Prediction",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "incremental_prediction"
+            },
+            {
+                "description": null,
+                "label": "Model Evaluation",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "model_evaluation"
+            },
+            {
+                "description": null,
+                "label": "Optimal Model Coeff",
+                "hidden": true,
+                "group_label": "Google Analytics 4",
+                "name": "optimal_model_coeff"
+            },
+            {
+                "description": "Explores Google Analytics sessions data.",
+                "label": "GA4 Sessions Beta",
+                "hidden": false,
+                "group_label": "Google Analytics 4",
+                "name": "sessions"
+            }
+        ],
+        "can": {
+            "create": true,
+            "destroy": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "update_field_unlimited_db_connections": true
+        }
+    },
+    {
+        "has_content": true,
+        "label": "Synthetic Data",
+        "name": "synthetic_data",
+        "project_name": "synthetic",
+        "unlimited_db_connections": false,
+        "allowed_db_connection_names": [
+            "pipeline_synthetic"
+        ],
+        "explores": [
+            {
+                "description": null,
+                "label": "Synthdata",
+                "hidden": false,
+                "group_label": "Synthetic Data",
+                "name": "synthdata"
+            }
+        ],
+        "can": {
+            "create": true,
+            "destroy": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "update_field_unlimited_db_connections": true
+        }
+    },
+    {
+        "has_content": true,
+        "label": "Lookml-diagram",
+        "name": "lookml-diagram",
+        "project_name": "marketplace_extension_lookml_diagram",
+        "unlimited_db_connections": false,
+        "allowed_db_connection_names": [
+            "empyrean-backup-411421"
+        ],
+        "explores": [],
+        "can": {
+            "create": true,
+            "destroy": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "update_field_unlimited_db_connections": true
+        }
+    },
+    {
+        "has_content": true,
+        "label": "Data-dictionary",
+        "name": "data-dictionary",
+        "project_name": "marketplace_extension_data_dictionary",
+        "unlimited_db_connections": false,
+        "allowed_db_connection_names": [
+            "empyrean-backup-411421"
+        ],
+        "explores": [],
+        "can": {
+            "create": true,
+            "destroy": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "update_field_unlimited_db_connections": true
+        }
+    },
+    {
+        "has_content": true,
+        "label": "Extension-api-explorer",
+        "name": "extension-api-explorer",
+        "project_name": "marketplace_extension_api_explorer",
+        "unlimited_db_connections": false,
+        "allowed_db_connection_names": [
+            "empyrean-backup-411421"
+        ],
+        "explores": [],
+        "can": {
+            "create": true,
+            "destroy": true,
+            "index": true,
+            "show": true,
+            "update": true,
+            "update_field_unlimited_db_connections": true
+        }
+    }
+]

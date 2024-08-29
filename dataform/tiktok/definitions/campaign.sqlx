@@ -1,0 +1,15 @@
+config {
+  type: "table",
+  schema: "tiktok"
+}
+
+select
+  campaign_id,
+  campaign_name,
+  objective,
+  budget,
+  start_time,
+  end_time,
+  status
+from
+  raw_campaign_data

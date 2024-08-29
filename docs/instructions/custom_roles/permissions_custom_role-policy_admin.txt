@@ -1,0 +1,12 @@
+custom_role:policy_admin
+recommender.iamPolicyInsights.get
+recommender.iamPolicyInsights.list
+recommender.iamPolicyInsights.update
+recommender.iamPolicyRecommendations.get
+recommender.iamPolicyRecommendations.list
+recommender.iamPolicyRecommendations.update
+resourcemanager.hierarchyNodes.listEffectiveTags
+resourcemanager.projects.get
+iam.serviceAccounts.getAccessToken
+observability.scopes.get
+orgpolicy.policy.get

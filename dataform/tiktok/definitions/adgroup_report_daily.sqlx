@@ -1,0 +1,16 @@
+config {
+  type: "table",
+  schema: "tiktok"
+}
+
+select
+  adgroup_id,
+  date,
+  sum(impressions) as total_impressions,
+  sum(clicks) as total_clicks,
+  sum(conversions) as total_conversions,
+  sum(spend) as total_spend
+from
+  raw_adgroup_report_data
+group by
+  adgroup_id, date

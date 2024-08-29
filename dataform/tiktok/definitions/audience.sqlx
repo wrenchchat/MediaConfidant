@@ -1,0 +1,13 @@
+config {
+  type: "table",
+  schema: "tiktok"
+}
+
+select
+  audience_id,
+  audience_name,
+  audience_size,
+  created_time,
+  updated_time
+from
+  raw_audience_data

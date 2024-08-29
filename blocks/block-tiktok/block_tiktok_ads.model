@@ -1,0 +1,4 @@
+connection: "@{CONNECTION_NAME}"
+
+include: "/explores/tiktok_ad_report.explore"
+include: "/dashboards/*.dashboard"

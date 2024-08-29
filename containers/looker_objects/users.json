@@ -1,0 +1,392 @@
+[
+    {
+        "avatar_url": "https://gravatar.lookercdn.com/avatar/3d23942ab62c5c2e5f4e41bd7579d400?s=156&d=blank",
+        "avatar_url_without_sizing": "https://gravatar.lookercdn.com/avatar/3d23942ab62c5c2e5f4e41bd7579d400?d=blank",
+        "credentials_api3": [],
+        "credentials_embed": [],
+        "credentials_google": null,
+        "email": "dionedge@gmail.com",
+        "first_name": "",
+        "id": "648",
+        "last_name": "",
+        "locale": "en",
+        "looker_versions": [],
+        "models_dir_validated": false,
+        "ui_state": null,
+        "embed_group_folder_id": null,
+        "home_folder_id": "1",
+        "personal_folder_id": "34",
+        "presumed_looker_employee": false,
+        "sessions": [],
+        "verified_looker_employee": false,
+        "roles_externally_managed": false,
+        "allow_direct_roles": true,
+        "allow_normal_group_membership": true,
+        "allow_roles_from_normal_groups": true,
+        "credentials_email": {
+            "created_at": "2024-08-20T19:54:28.000Z",
+            "user_id": "648",
+            "logged_in_at": "",
+            "type": "email",
+            "email": "dionedge@gmail.com",
+            "forced_password_reset_at_next_login": false,
+            "is_disabled": false,
+            "password_reset_url": "",
+            "account_setup_url": "",
+            "url": "https://localhost:19999/api/4.0/users/648/credentials_email",
+            "user_url": "https://localhost:19999/api/4.0/users/648",
+            "can": {
+                "show_password_reset_url": true
+            }
+        },
+        "credentials_ldap": null,
+        "credentials_looker_openid": null,
+        "credentials_oidc": null,
+        "credentials_saml": null,
+        "credentials_totp": null,
+        "display_name": "",
+        "group_ids": [
+            "1",
+            "5"
+        ],
+        "is_disabled": false,
+        "role_ids": [
+            "636"
+        ],
+        "is_iam_admin": false,
+        "url": "https://localhost:19999/api/4.0/users/648",
+        "can": {
+            "index": true,
+            "index_details": true,
+            "show": true,
+            "show_creds": true,
+            "show_details": true,
+            "sudo": true,
+            "update_creds": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "avatar_url": "https://gravatar.lookercdn.com/avatar/ac4fbc229483c22e747f7a9fbf1fb2f3?s=156&d=blank",
+        "avatar_url_without_sizing": "https://gravatar.lookercdn.com/avatar/ac4fbc229483c22e747f7a9fbf1fb2f3?d=blank",
+        "credentials_api3": [],
+        "credentials_embed": [],
+        "credentials_google": null,
+        "email": "jared@doit.com",
+        "first_name": "",
+        "id": "605",
+        "last_name": "",
+        "locale": "en",
+        "looker_versions": [],
+        "models_dir_validated": false,
+        "ui_state": null,
+        "embed_group_folder_id": null,
+        "home_folder_id": "1",
+        "personal_folder_id": "23",
+        "presumed_looker_employee": false,
+        "sessions": [],
+        "verified_looker_employee": false,
+        "roles_externally_managed": false,
+        "allow_direct_roles": true,
+        "allow_normal_group_membership": true,
+        "allow_roles_from_normal_groups": true,
+        "credentials_email": {
+            "created_at": "2024-08-06T19:25:06.000Z",
+            "user_id": "605",
+            "logged_in_at": "",
+            "type": "email",
+            "email": "jared@doit.com",
+            "forced_password_reset_at_next_login": false,
+            "is_disabled": false,
+            "password_reset_url": "",
+            "account_setup_url": "",
+            "url": "https://localhost:19999/api/4.0/users/605/credentials_email",
+            "user_url": "https://localhost:19999/api/4.0/users/605",
+            "can": {
+                "show_password_reset_url": true
+            }
+        },
+        "credentials_ldap": null,
+        "credentials_looker_openid": null,
+        "credentials_oidc": null,
+        "credentials_saml": null,
+        "credentials_totp": null,
+        "display_name": "",
+        "group_ids": [
+            "1"
+        ],
+        "is_disabled": false,
+        "role_ids": [
+            "2"
+        ],
+        "is_iam_admin": false,
+        "url": "https://localhost:19999/api/4.0/users/605",
+        "can": {
+            "index": true,
+            "index_details": true,
+            "show": true,
+            "show_creds": true,
+            "show_details": true,
+            "sudo": true,
+            "update_creds": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "avatar_url": "https://gravatar.lookercdn.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=156&d=blank",
+        "avatar_url_without_sizing": "https://gravatar.lookercdn.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=blank",
+        "credentials_api3": [],
+        "credentials_embed": [],
+        "credentials_google": null,
+        "email": "",
+        "first_name": "Marketplace Automation User",
+        "id": "669",
+        "last_name": " (0a6825)",
+        "locale": "en",
+        "looker_versions": [],
+        "models_dir_validated": null,
+        "ui_state": null,
+        "embed_group_folder_id": null,
+        "home_folder_id": "1",
+        "personal_folder_id": "36",
+        "presumed_looker_employee": false,
+        "sessions": [],
+        "verified_looker_employee": false,
+        "roles_externally_managed": false,
+        "allow_direct_roles": true,
+        "allow_normal_group_membership": true,
+        "allow_roles_from_normal_groups": true,
+        "credentials_email": null,
+        "credentials_ldap": null,
+        "credentials_looker_openid": null,
+        "credentials_oidc": null,
+        "credentials_saml": null,
+        "credentials_totp": null,
+        "display_name": "Marketplace Automation User  (0a6825)",
+        "group_ids": [
+            "1"
+        ],
+        "is_disabled": false,
+        "role_ids": [
+            "657"
+        ],
+        "is_iam_admin": false,
+        "url": "https://localhost:19999/api/4.0/users/669",
+        "can": {
+            "index": true,
+            "index_details": true,
+            "show": true,
+            "show_creds": true,
+            "show_details": true,
+            "sudo": true,
+            "update_creds": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "avatar_url": "https://gravatar.lookercdn.com/avatar/46f96241a68f96a83d1c0b6c64d8cb27?s=156&d=blank",
+        "avatar_url_without_sizing": "https://gravatar.lookercdn.com/avatar/46f96241a68f96a83d1c0b6c64d8cb27?d=blank",
+        "credentials_api3": [
+            {
+                "id": "4",
+                "client_id": "tTz3X5M722NdTDJXfpVM",
+                "created_at": "2024-08-10T17:44:00.000Z",
+                "type": "api3",
+                "is_disabled": false,
+                "url": "https://localhost:19999/api/4.0/users/521/credentials_api3/4",
+                "can": {}
+            },
+            {
+                "id": "5",
+                "client_id": "gj7FpC88kQN3p2F92H8J",
+                "created_at": "2024-08-27T14:30:17.000Z",
+                "type": "api3",
+                "is_disabled": false,
+                "url": "https://localhost:19999/api/4.0/users/521/credentials_api3/5",
+                "can": {}
+            }
+        ],
+        "credentials_embed": [],
+        "credentials_google": null,
+        "email": "dion@wrench.chat",
+        "first_name": "Dion",
+        "id": "521",
+        "last_name": "Edge",
+        "locale": "en",
+        "looker_versions": [
+            "24.10.31",
+            "24.12.28"
+        ],
+        "models_dir_validated": false,
+        "ui_state": {
+            "homepageGroupIdPreference": "1",
+            "homepagePopularGroupIdPreference": "1"
+        },
+        "embed_group_folder_id": null,
+        "home_folder_id": "lookml",
+        "personal_folder_id": "20",
+        "presumed_looker_employee": false,
+        "sessions": [
+            {
+                "id": "256",
+                "ip_address": "136.62.149.51",
+                "browser": "Chrome",
+                "operating_system": "OS X 10.15.7",
+                "city": "Austin",
+                "state": "Texas",
+                "country": "US",
+                "credentials_type": "email",
+                "extended_at": "",
+                "extended_count": 0,
+                "sudo_user_id": null,
+                "created_at": "2024-08-27T14:00:05.000Z",
+                "expires_at": "2024-08-28T14:00:05.000Z",
+                "url": "https://localhost:19999/api/4.0/users/521/sessions/256",
+                "can": {}
+            }
+        ],
+        "verified_looker_employee": false,
+        "roles_externally_managed": false,
+        "allow_direct_roles": true,
+        "allow_normal_group_membership": true,
+        "allow_roles_from_normal_groups": true,
+        "credentials_email": {
+            "created_at": "2024-07-10T21:36:12.000Z",
+            "user_id": "521",
+            "logged_in_at": "2024-08-27T14:00:05.000Z",
+            "type": "email",
+            "email": "dion@wrench.chat",
+            "forced_password_reset_at_next_login": false,
+            "is_disabled": false,
+            "password_reset_url": "",
+            "account_setup_url": "",
+            "url": "https://localhost:19999/api/4.0/users/521/credentials_email",
+            "user_url": "https://localhost:19999/api/4.0/users/521",
+            "can": {
+                "show_password_reset_url": true
+            }
+        },
+        "credentials_ldap": null,
+        "credentials_looker_openid": null,
+        "credentials_oidc": null,
+        "credentials_saml": null,
+        "credentials_totp": null,
+        "display_name": "Dion Edge",
+        "group_ids": [
+            "1"
+        ],
+        "is_disabled": false,
+        "role_ids": [
+            "2"
+        ],
+        "is_iam_admin": false,
+        "url": "https://localhost:19999/api/4.0/users/521",
+        "can": {
+            "index": true,
+            "index_details": true,
+            "show": true,
+            "show_creds": true,
+            "show_details": true,
+            "sudo": false,
+            "update_creds": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "avatar_url": "https://gravatar.lookercdn.com/avatar/f7c88a7b12d95adc307d2911e6f5c10b?s=156&d=blank",
+        "avatar_url_without_sizing": "https://gravatar.lookercdn.com/avatar/f7c88a7b12d95adc307d2911e6f5c10b?d=blank",
+        "credentials_api3": [],
+        "credentials_embed": [],
+        "credentials_google": null,
+        "email": "mstrachan@mediaconfidant.com",
+        "first_name": "michael",
+        "id": "2",
+        "last_name": "strachan",
+        "locale": "en",
+        "looker_versions": [
+            "23.16.63",
+            "23.18.26",
+            "23.20.18",
+            "24.0.17",
+            "24.0.39",
+            "24.0.43",
+            "24.0.47",
+            "24.10.31",
+            "24.12.28",
+            "24.2.32",
+            "24.4.15",
+            "24.4.28",
+            "24.6.29",
+            "24.8.15",
+            "24.8.21"
+        ],
+        "models_dir_validated": false,
+        "ui_state": {
+            "homepageGroupIdPreference": "1",
+            "homepagePopularGroupIdPreference": "1",
+            "dismissedDialogs": [],
+            "selectedGuide": "setup",
+            "setupChecklistViewed": true
+        },
+        "embed_group_folder_id": null,
+        "home_folder_id": "1",
+        "personal_folder_id": "6",
+        "presumed_looker_employee": false,
+        "sessions": [],
+        "verified_looker_employee": false,
+        "roles_externally_managed": false,
+        "allow_direct_roles": true,
+        "allow_normal_group_membership": true,
+        "allow_roles_from_normal_groups": true,
+        "credentials_email": {
+            "created_at": "2023-10-17T21:38:18.000Z",
+            "user_id": "2",
+            "logged_in_at": "2024-08-22T18:35:54.000Z",
+            "type": "email",
+            "email": "mstrachan@mediaconfidant.com",
+            "forced_password_reset_at_next_login": false,
+            "is_disabled": false,
+            "password_reset_url": "",
+            "account_setup_url": "",
+            "url": "https://localhost:19999/api/4.0/users/2/credentials_email",
+            "user_url": "https://localhost:19999/api/4.0/users/2",
+            "can": {
+                "show_password_reset_url": true
+            }
+        },
+        "credentials_ldap": null,
+        "credentials_looker_openid": null,
+        "credentials_oidc": null,
+        "credentials_saml": null,
+        "credentials_totp": {
+            "created_at": "2023-11-02T00:01:12.000Z",
+            "type": "two-factor",
+            "verified": false,
+            "is_disabled": false,
+            "url": "https://localhost:19999/api/4.0/users/2/credentials_totp",
+            "can": {}
+        },
+        "display_name": "michael strachan",
+        "group_ids": [
+            "1"
+        ],
+        "is_disabled": false,
+        "role_ids": [
+            "2",
+            "4",
+            "3"
+        ],
+        "is_iam_admin": false,
+        "url": "https://localhost:19999/api/4.0/users/2",
+        "can": {
+            "index": true,
+            "index_details": true,
+            "show": true,
+            "show_creds": true,
+            "show_details": true,
+            "sudo": true,
+            "update_creds": true,
+            "view_in_ui": true
+        }
+    }
+]

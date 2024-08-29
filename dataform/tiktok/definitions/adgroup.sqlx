@@ -1,0 +1,17 @@
+config {
+  type: "table",
+  schema: "tiktok"
+}
+
+select
+  adgroup_id,
+  adgroup_name,
+  adgroup_status,
+  targeting_type,
+  bid_strategy,
+  budget,
+  start_time,
+  end_time,
+  campaign_id
+from
+  raw_adgroup_data

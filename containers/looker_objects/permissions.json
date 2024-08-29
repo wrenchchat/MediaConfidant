@@ -1,0 +1,368 @@
+[
+    {
+        "permission": "access_data",
+        "parent": null,
+        "description": "See query result content.",
+        "can": {}
+    },
+    {
+        "permission": "see_lookml_dashboards",
+        "parent": "access_data",
+        "description": "See dashboards defined in LookML.",
+        "can": {}
+    },
+    {
+        "permission": "see_looks",
+        "parent": "access_data",
+        "description": "See existing Looks.",
+        "can": {}
+    },
+    {
+        "permission": "see_user_dashboards",
+        "parent": "see_looks",
+        "description": "See user defined dashboards.",
+        "can": {}
+    },
+    {
+        "permission": "explore",
+        "parent": "see_looks",
+        "description": "Explore to create Looks.",
+        "can": {}
+    },
+    {
+        "permission": "create_table_calculations",
+        "parent": "explore",
+        "description": "Create table calculations in explore.",
+        "can": {}
+    },
+    {
+        "permission": "create_custom_fields",
+        "parent": "explore",
+        "description": "Create custom fields in explore.",
+        "can": {}
+    },
+    {
+        "permission": "can_create_forecast",
+        "parent": "explore",
+        "description": "Ability to create forecasts",
+        "can": {}
+    },
+    {
+        "permission": "can_override_vis_config",
+        "parent": "explore",
+        "description": "Override highcharts config with advanced vis config JSON input",
+        "can": {}
+    },
+    {
+        "permission": "save_content",
+        "parent": "see_looks",
+        "description": "Save and edit content. Needs additional permissions for looks and dashboards.",
+        "can": {}
+    },
+    {
+        "permission": "save_dashboards",
+        "parent": "save_content",
+        "description": "Save and edit Dashboards.",
+        "can": {}
+    },
+    {
+        "permission": "save_looks",
+        "parent": "save_content",
+        "description": "Save and edit Looks",
+        "can": {}
+    },
+    {
+        "permission": "create_public_looks",
+        "parent": "save_looks",
+        "description": "Create a Look that is public to the rest of the world.",
+        "can": {}
+    },
+    {
+        "permission": "download_with_limit",
+        "parent": "see_looks",
+        "description": "Download queries that have a limit.",
+        "can": {}
+    },
+    {
+        "permission": "download_without_limit",
+        "parent": "see_looks",
+        "description": "Download queries that do not have a limit.",
+        "can": {}
+    },
+    {
+        "permission": "schedule_look_emails",
+        "parent": "see_looks",
+        "description": "Schedule a Look to send emails.",
+        "can": {}
+    },
+    {
+        "permission": "schedule_external_look_emails",
+        "parent": "schedule_look_emails",
+        "description": "Schedule a Look to send an email to a user with a domain that falls outside the list of restricted domains.",
+        "can": {}
+    },
+    {
+        "permission": "create_alerts",
+        "parent": "see_looks",
+        "description": "Allow user to create an alert (Beta)",
+        "can": {}
+    },
+    {
+        "permission": "follow_alerts",
+        "parent": "see_looks",
+        "description": "Allows user to view and follow public alerts",
+        "can": {}
+    },
+    {
+        "permission": "send_to_s3",
+        "parent": "see_looks",
+        "description": "Upload data to Amazon S3",
+        "can": {}
+    },
+    {
+        "permission": "send_to_sftp",
+        "parent": "see_looks",
+        "description": "Upload data via SFTP",
+        "can": {}
+    },
+    {
+        "permission": "send_outgoing_webhook",
+        "parent": "see_looks",
+        "description": "Push data to a WebHook",
+        "can": {}
+    },
+    {
+        "permission": "send_to_integration",
+        "parent": "see_looks",
+        "description": "Push data to an integration",
+        "can": {}
+    },
+    {
+        "permission": "see_sql",
+        "parent": "see_looks",
+        "description": "See SQL in Explore",
+        "can": {}
+    },
+    {
+        "permission": "see_lookml",
+        "parent": "see_looks",
+        "description": "See LookML source in Explore",
+        "can": {}
+    },
+    {
+        "permission": "develop",
+        "parent": "see_lookml",
+        "description": "Manage and develop models.",
+        "can": {}
+    },
+    {
+        "permission": "deploy",
+        "parent": "develop",
+        "description": "Push models to production.",
+        "can": {}
+    },
+    {
+        "permission": "support_access_toggle",
+        "parent": "develop",
+        "description": "Ability to allow or deny support access.",
+        "can": {}
+    },
+    {
+        "permission": "manage_project_models",
+        "parent": "develop",
+        "description": "Same as manage_models, but in a project scope.",
+        "can": {}
+    },
+    {
+        "permission": "use_global_connections",
+        "parent": "manage_project_models",
+        "description": "Use instance wide connections in model configuration.",
+        "can": {}
+    },
+    {
+        "permission": "manage_project_connections_restricted",
+        "parent": "develop",
+        "description": "Create and manage connections which are scoped to projects with limited access to modify connection parameters.",
+        "can": {}
+    },
+    {
+        "permission": "manage_project_connections",
+        "parent": "manage_project_connections_restricted",
+        "description": "Create and manage connections which are scoped to projects.",
+        "can": {}
+    },
+    {
+        "permission": "use_sql_runner",
+        "parent": "see_lookml",
+        "description": "Use the sql_runner to run arbitrary SQL statements against allowed connections.",
+        "can": {}
+    },
+    {
+        "permission": "clear_cache_refresh",
+        "parent": "access_data",
+        "description": "Ability to clear cache for dashboard or tile and refresh it with a new data",
+        "can": {}
+    },
+    {
+        "permission": "see_drill_overlay",
+        "parent": "access_data",
+        "description": "Allow drilling within the drill overlay. The drill overlay is also always enabled if the user has the \"explore\" permission.",
+        "can": {}
+    },
+    {
+        "permission": "manage_spaces",
+        "parent": null,
+        "description": "Create, edit, and delete spaces.",
+        "can": {}
+    },
+    {
+        "permission": "manage_homepage",
+        "parent": null,
+        "description": "Manage custom sections on the home page.",
+        "can": {}
+    },
+    {
+        "permission": "manage_models",
+        "parent": null,
+        "description": "Manage mapping of models to projects and connections.",
+        "can": {}
+    },
+    {
+        "permission": "manage_stereo",
+        "parent": null,
+        "description": "Allow users to administer the creation of Stereo indexes",
+        "can": {}
+    },
+    {
+        "permission": "create_prefetches",
+        "parent": null,
+        "description": "Create Prefetches for dashboards and looks.",
+        "can": {}
+    },
+    {
+        "permission": "login_special_email",
+        "parent": null,
+        "description": "Login using email/pw even when ldap/google-oauth/etc is enabled.",
+        "can": {}
+    },
+    {
+        "permission": "embed_browse_spaces",
+        "parent": null,
+        "description": "Allow embed user to browse spaces. Appropriate for sso embed users only.",
+        "can": {}
+    },
+    {
+        "permission": "embed_save_shared_space",
+        "parent": null,
+        "description": "Allow embed user to save into the shared space. Appropriate for sso embed users only.",
+        "can": {}
+    },
+    {
+        "permission": "manage_embed_settings",
+        "parent": null,
+        "description": "Allow users to create and test Embed SSO URL. This needs \"Embed\" to be enabled by Looker",
+        "can": {}
+    },
+    {
+        "permission": "manage_themes",
+        "parent": null,
+        "description": "Allow users to manage themes. This needs \"Custom Themes\" to be enabled by Looker",
+        "can": {}
+    },
+    {
+        "permission": "manage_privatelabel",
+        "parent": null,
+        "description": "Allow users to manage private label settings. This needs \"Private Label\" to be enabled by Looker",
+        "can": {}
+    },
+    {
+        "permission": "see_alerts",
+        "parent": null,
+        "description": "View alerts and history in Admin Panel. User can also view, edit, delete, enable, disable, change ownership of alerts created by others.",
+        "can": {}
+    },
+    {
+        "permission": "see_queries",
+        "parent": null,
+        "description": "Show queries in Admin Panel",
+        "can": {}
+    },
+    {
+        "permission": "see_logs",
+        "parent": null,
+        "description": "View and download logs in Admin Panel",
+        "can": {}
+    },
+    {
+        "permission": "see_users",
+        "parent": null,
+        "description": "View users in Admin Panel",
+        "can": {}
+    },
+    {
+        "permission": "sudo",
+        "parent": "see_users",
+        "description": "Enables sudo-ing to a non-admin user in Users Admin Panel",
+        "can": {}
+    },
+    {
+        "permission": "manage_groups",
+        "parent": "see_users",
+        "description": "Allow users to manage groups",
+        "can": {}
+    },
+    {
+        "permission": "manage_roles",
+        "parent": "manage_groups",
+        "description": "Allow users to create, update and manage roles.",
+        "can": {}
+    },
+    {
+        "permission": "manage_user_attributes",
+        "parent": "see_users",
+        "description": "Allow users to manage user attributes",
+        "can": {}
+    },
+    {
+        "permission": "see_schedules",
+        "parent": null,
+        "description": "View scheduled plans and history in Admin Panel",
+        "can": {}
+    },
+    {
+        "permission": "see_pdts",
+        "parent": null,
+        "description": "View PDT status in Admin Panel",
+        "can": {}
+    },
+    {
+        "permission": "see_datagroups",
+        "parent": null,
+        "description": "View Datagroup status in Admin Panel",
+        "can": {}
+    },
+    {
+        "permission": "update_datagroups",
+        "parent": "see_datagroups",
+        "description": "Modify datagroup status in Admin Panel",
+        "can": {}
+    },
+    {
+        "permission": "see_system_activity",
+        "parent": null,
+        "description": "Use the i__looker model to explore the internal database.",
+        "can": {}
+    },
+    {
+        "permission": "administer",
+        "parent": null,
+        "description": "Do admin tasks (only available to the Admin role).",
+        "can": {}
+    },
+    {
+        "permission": "mobile_app_access",
+        "parent": null,
+        "description": "Allow mobile app login",
+        "can": {}
+    }
+]

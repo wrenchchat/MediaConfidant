@@ -1,0 +1,123 @@
+include: "*.view.lkml"
+include: "*/*.view.lkml"
+view: tiktok_ad_report {
+extends: [date_base,ad_metrics_period_comparison_base,period_base,tiktok_ad_metrics_base]
+ sql_table_name: @{TIKTOK_SCHEMA}."AD_REPORT_DAILY" ;;
+
+  dimension: primary_key {
+    type: string
+    sql: ${ad_id}||${campaign_date} ;;
+    primary_key: yes
+
+  }
+
+  dimension: ad_id {
+    type: number
+    sql: ${TABLE}."AD_ID" ;;
+  }
+
+  dimension: ad_name {
+    type: string
+    sql: ${ad.ad_name} ;;
+  }
+
+  dimension: ad_text {
+    type: string
+    sql: ${TABLE}."AD_TEXT" ;;
+  }
+
+  dimension: adgroup_id {
+    type: number
+    sql: ${TABLE}."ADGROUP_ID" ;;
+  }
+
+
+  dimension_group: campaign {
+    type: time
+    timeframes: [
+      raw,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    convert_tz: no
+    datatype: date
+    sql: ${TABLE}."STAT_TIME_DAY" ;;
+  }
+
+  dimension: campaign_id {
+    type: number
+    sql: ${TABLE}."CAMPAIGN_ID" ;;
+  }
+
+  dimension: campaign_name {
+    type: string
+    sql: ${TABLE}."CAMPAIGN_NAME" ;;
+  }
+
+
+
+  dimension: clicks {
+    type: number
+    sql: ${TABLE}."CLICKS" ;;
+  }
+
+  dimension: cost_per_conversion {
+    type: number
+    sql: ${TABLE}."COST_PER_CONVERSION" ;;
+  }
+
+  dimension: cpc {
+    type: number
+    sql: ${TABLE}."CPC" ;;
+  }
+
+  dimension: cpm {
+    type: number
+    sql: ${TABLE}."CPM" ;;
+  }
+
+  dimension: ctr {
+    type: number
+    sql: ${TABLE}."CTR" ;;
+  }
+
+  dimension: impressions {
+    type: number
+    sql: ${TABLE}."IMPRESSIONS" ;;
+  }
+
+  dimension: likes {
+    type: number
+    sql: ${TABLE}."LIKES" ;;
+  }
+
+  dimension: spend {
+    type: number
+    sql: ${TABLE}."SPEND" ;;
+  }
+
+  dimension: utm_campaign {
+    type: string
+    sql: ${campaign_name} ;;
+  }
+
+  dimension: utm_content {
+    type: string
+    sql: ${TABLE}."UTM_CONTENT" ;;
+  }
+
+  dimension: utm_medium {
+    type: string
+    sql: ${TABLE}."UTM_MEDIUM" ;;
+  }
+
+  dimension: utm_source {
+    type: string
+    sql: ${TABLE}."UTM_SOURCE" ;;
+  }
+
+
+}

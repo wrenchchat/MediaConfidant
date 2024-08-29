@@ -1,0 +1,102 @@
+[
+    {
+        "can_add_to_content_metadata": true,
+        "external_group_id": null,
+        "id": "1",
+        "name": "All Users",
+        "user_count": 5,
+        "externally_managed": true,
+        "include_by_default": true,
+        "contains_current_user": true,
+        "can": {
+            "add_to_content_metadata": true,
+            "create": true,
+            "delete": false,
+            "update": false,
+            "edit_in_ui": false,
+            "index": true,
+            "show": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "can_add_to_content_metadata": true,
+        "external_group_id": null,
+        "id": "4",
+        "name": "GA4 Preview",
+        "user_count": 0,
+        "externally_managed": false,
+        "include_by_default": false,
+        "contains_current_user": false,
+        "can": {
+            "add_to_content_metadata": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "edit_in_ui": true,
+            "index": true,
+            "show": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "can_add_to_content_metadata": true,
+        "external_group_id": null,
+        "id": "5",
+        "name": "new_devs",
+        "user_count": 1,
+        "externally_managed": false,
+        "include_by_default": false,
+        "contains_current_user": false,
+        "can": {
+            "add_to_content_metadata": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "edit_in_ui": true,
+            "index": true,
+            "show": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "can_add_to_content_metadata": true,
+        "external_group_id": null,
+        "id": "3",
+        "name": "Test and Template Property",
+        "user_count": 0,
+        "externally_managed": false,
+        "include_by_default": false,
+        "contains_current_user": false,
+        "can": {
+            "add_to_content_metadata": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "edit_in_ui": true,
+            "index": true,
+            "show": true,
+            "view_in_ui": true
+        }
+    },
+    {
+        "can_add_to_content_metadata": true,
+        "external_group_id": null,
+        "id": "2",
+        "name": "User",
+        "user_count": 0,
+        "externally_managed": false,
+        "include_by_default": false,
+        "contains_current_user": false,
+        "can": {
+            "add_to_content_metadata": true,
+            "create": true,
+            "delete": true,
+            "update": true,
+            "edit_in_ui": true,
+            "index": true,
+            "show": true,
+            "view_in_ui": true
+        }
+    }
+]

@@ -1,0 +1,2622 @@
+[
+    {
+        "id": "1::airtable",
+        "integration_hub_id": "1",
+        "label": "Airtable",
+        "description": "Add records to an Airtable table.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Aairtable/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "airtable_api_key",
+                "label": "Airtable API Key",
+                "description": "API key for Airtable from https://airtable.com/account.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::amazon_sagemaker_infer",
+        "integration_hub_id": "1",
+        "label": "Amazon SageMaker Infer",
+        "description": "Perform an inference using Amazon SageMaker.",
+        "enabled": false,
+        "supported_formats": [
+            "csv"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Aamazon_sagemaker_infer/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "accessKeyId",
+                "label": "Access Key",
+                "description": "Your access key for SageMaker.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "secretAccessKey",
+                "label": "Secret Key",
+                "description": "Your secret key for SageMaker.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "roleArn",
+                "label": "Role ARN",
+                "description": "Role ARN for accessing SageMaker and S3",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "region",
+                "label": "Region",
+                "description": "AWS Region for accessing SageMaker",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "user_email",
+                "label": "Looker User Email",
+                "description": "n        Click the button on the right and select 'Email'.n        This is required for the action to send status emailsn        when training or inference jobs are complete.n      ",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpHost",
+                "label": "SMTP Host",
+                "description": "Host for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpPort",
+                "label": "SMTP Port",
+                "description": "Port for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpFrom",
+                "label": "SMTP From",
+                "description": "From for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpUser",
+                "label": "SMTP User",
+                "description": "User for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpPass",
+                "label": "SMTP Pass",
+                "description": "Pass for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::amazon_sagemaker_train_linearlearner",
+        "integration_hub_id": "1",
+        "label": "Amazon SageMaker Train: Linear Learner",
+        "description": "Start a traingin job on Amazon SageMaker, using the Linear Learner algorithm.",
+        "enabled": false,
+        "supported_formats": [
+            "csv"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Aamazon_sagemaker_train_linearlearner/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "accessKeyId",
+                "label": "Access Key",
+                "description": "Your access key for SageMaker.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "secretAccessKey",
+                "label": "Secret Key",
+                "description": "Your secret key for SageMaker.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "roleArn",
+                "label": "Role ARN",
+                "description": "Role ARN for accessing SageMaker and S3",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "user_email",
+                "label": "Looker User Email",
+                "description": "n        Click the button on the right and select 'Email'.n        This is required for the action to send status emailsn        when training or inference jobs are complete.n      ",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpHost",
+                "label": "SMTP Host",
+                "description": "Host for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpPort",
+                "label": "SMTP Port",
+                "description": "Port for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpFrom",
+                "label": "SMTP From",
+                "description": "From for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpUser",
+                "label": "SMTP User",
+                "description": "User for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpPass",
+                "label": "SMTP Pass",
+                "description": "Pass for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::amazon_sagemaker_train_xgboost",
+        "integration_hub_id": "1",
+        "label": "Amazon SageMaker Train: Xgboost",
+        "description": "Start a traingin job on Amazon SageMaker, using the Xgboost algorithm.",
+        "enabled": false,
+        "supported_formats": [
+            "csv"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Aamazon_sagemaker_train_xgboost/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "accessKeyId",
+                "label": "Access Key",
+                "description": "Your access key for SageMaker.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "secretAccessKey",
+                "label": "Secret Key",
+                "description": "Your secret key for SageMaker.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "roleArn",
+                "label": "Role ARN",
+                "description": "Role ARN for accessing SageMaker and S3",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "user_email",
+                "label": "Looker User Email",
+                "description": "n        Click the button on the right and select 'Email'.n        This is required for the action to send status emailsn        when training or inference jobs are complete.n      ",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpHost",
+                "label": "SMTP Host",
+                "description": "Host for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpPort",
+                "label": "SMTP Port",
+                "description": "Port for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpFrom",
+                "label": "SMTP From",
+                "description": "From for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpUser",
+                "label": "SMTP User",
+                "description": "User for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "smtpPass",
+                "label": "SMTP Pass",
+                "description": "Pass for sending emails.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::auger",
+        "integration_hub_id": "1",
+        "label": "Auger - AutoML Training",
+        "description": "Send data to Auger to start training.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Aauger/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "api_token",
+                "label": "Auger API Token",
+                "description": "API Token from https://app.auger.com/<organization_name>/settings",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "max_n_trials",
+                "label": "Max number of trials",
+                "description": "The maximum number of trials to run on your data training",
+                "required": false,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "max_total_time_mins",
+                "label": "Max training time minutes",
+                "description": "Maximum time alloted to train your data in minutes",
+                "required": false,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::aws_ec2_stop_instance",
+        "integration_hub_id": "1",
+        "label": "AWS EC2 - Stop Instance",
+        "description": "Stop an EC2 instance.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "cell",
+            "query"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Aaws_ec2_stop_instance/icon",
+        "uses_oauth": false,
+        "required_fields": [
+            {
+                "tag": "aws_resource_id",
+                "any_tag": [],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "access_key_id",
+                "label": "Access Key",
+                "description": "Your access key for EC2.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "secret_access_key",
+                "label": "Secret Key",
+                "description": "Your secret key for EC2.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "region",
+                "label": "Region",
+                "description": "EC2 Region e.g. us-east-1, us-west-1, ap-south-1 from http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": false
+        }
+    },
+    {
+        "id": "1::azure_storage",
+        "integration_hub_id": "1",
+        "label": "Azure Storage",
+        "description": "Write data files to an Azure container.",
+        "enabled": false,
+        "supported_formats": [
+            "txt",
+            "csv",
+            "inline_json",
+            "json",
+            "json_label",
+            "json_detail",
+            "json_detail_lite_stream",
+            "json_bi",
+            "xlsx",
+            "html",
+            "csv_zip",
+            "wysiwyg_pdf",
+            "assembled_pdf",
+            "wysiwyg_png"
+        ],
+        "supported_action_types": [
+            "query",
+            "dashboard"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Aazure_storage/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "account",
+                "label": "Storage Account",
+                "description": "Your account for Azure.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "accessKey",
+                "label": "Access Key",
+                "description": "Your access key for Azure.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::braze",
+        "integration_hub_id": "1",
+        "label": "Braze",
+        "description": "Flags users from Looker to Braze via the REST API for use with segmentation. Ensure there's a 'braze_id' field tagged in the results. MAX EXPORT: 100000.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Abraze/icon",
+        "uses_oauth": false,
+        "required_fields": [
+            {
+                "tag": "braze_id",
+                "any_tag": [],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "braze_api_key",
+                "label": "Braze API Key",
+                "description": "Braze API Key from https://dashboard.braze.com/app_settings/developer_console/ with users.track permission.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "braze_api_endpoint",
+                "label": "Braze REST API Endpoint",
+                "description": "Braze REST API endpoint based on the instance location. See: https://www.braze.com/docs/developer_guide/rest_api/basics/#endpoints",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::datarobot",
+        "integration_hub_id": "1",
+        "label": "DataRobot - Create New Project",
+        "description": "Send data to DataRobot and create a new project.",
+        "enabled": false,
+        "supported_formats": [
+            "csv"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Adatarobot/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "datarobot_api_token",
+                "label": "Authentication User Attribute",
+                "description": "Select the customer user attribute that holds the DataRobot API Token.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "datarobot_url",
+                "label": "DataRobot URL",
+                "description": "Enter your DataRobot application URL. Example: https://app.datarobot.com.",
+                "required": false,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::digitalocean_droplet",
+        "integration_hub_id": "1",
+        "label": "DigitalOcean - Stop Droplet",
+        "description": "Stop a DigitalOcean droplet.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "cell",
+            "query"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Adigitalocean_droplet/icon",
+        "uses_oauth": false,
+        "required_fields": [
+            {
+                "tag": "digitalocean_droplet_id",
+                "any_tag": [],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "digitalocean_api_key",
+                "label": "DigitalOcean API Key",
+                "description": "",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": false
+        }
+    },
+    {
+        "id": "1::digitalocean_object_storage",
+        "integration_hub_id": "1",
+        "label": "DigitalOcean Spaces",
+        "description": "Write data files to DigitalOcean's Spaces storage.",
+        "enabled": false,
+        "supported_formats": [
+            "txt",
+            "csv",
+            "inline_json",
+            "json",
+            "json_label",
+            "json_detail",
+            "json_detail_lite_stream",
+            "json_bi",
+            "xlsx",
+            "html",
+            "csv_zip",
+            "wysiwyg_pdf",
+            "assembled_pdf",
+            "wysiwyg_png"
+        ],
+        "supported_action_types": [
+            "dashboard",
+            "query"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Adigitalocean_object_storage/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "access_key_id",
+                "label": "Spaces Access Key",
+                "description": "Your access key for DigitalOcean Spaces https://cloud.digitalocean.com/settings/api/tokens.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "secret_access_key",
+                "label": "Spaces Secret Key",
+                "description": "Your secret key for DigitalOcean Spaces https://cloud.digitalocean.com/settings/api/tokens.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "region",
+                "label": "Region",
+                "description": "DigitalOcean Region e.g. NYC3 ",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::dropbox",
+        "integration_hub_id": "1",
+        "label": "Dropbox",
+        "description": "Send data directly to a Dropbox folder.",
+        "enabled": false,
+        "supported_formats": [
+            "txt",
+            "csv",
+            "inline_json",
+            "json",
+            "json_label",
+            "json_detail",
+            "json_detail_lite_stream",
+            "json_bi",
+            "xlsx",
+            "html",
+            "csv_zip",
+            "wysiwyg_pdf",
+            "assembled_pdf",
+            "wysiwyg_png"
+        ],
+        "supported_action_types": [
+            "query",
+            "dashboard"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Adropbox/icon",
+        "uses_oauth": true,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::facebook_custom_audiences",
+        "integration_hub_id": "1",
+        "label": "Facebook Custom Audiences",
+        "description": "Upload data to Facebook Ads Custom Audiences from Customer List",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail_lite_stream"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Afacebook_custom_audiences/icon",
+        "uses_oauth": true,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::firebase",
+        "integration_hub_id": "1",
+        "label": "Firebase",
+        "description": "Use firebase to send push notifications to mobile.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "none"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Afirebase/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": false
+        }
+    },
+    {
+        "id": "1::google_ads_customer_match",
+        "integration_hub_id": "1",
+        "label": "Google Ads Customer Match",
+        "description": "Upload data to Google Ads Customer Match.",
+        "enabled": false,
+        "supported_formats": [
+            "json_label"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Agoogle_ads_customer_match/icon",
+        "uses_oauth": true,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::google_analytics_data_import",
+        "integration_hub_id": "1",
+        "label": "Google Analytics Data Import",
+        "description": "Upload data to a custom Data Set in Google Analytics.",
+        "enabled": false,
+        "supported_formats": [
+            "csv"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Agoogle_analytics_data_import/icon",
+        "uses_oauth": true,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::google_cloud_storage",
+        "integration_hub_id": "1",
+        "label": "Google Cloud Storage",
+        "description": "Write data files to a Google Cloud Storage bucket.",
+        "enabled": false,
+        "supported_formats": [
+            "txt",
+            "csv",
+            "inline_json",
+            "json",
+            "json_label",
+            "json_detail",
+            "json_detail_lite_stream",
+            "json_bi",
+            "xlsx",
+            "html",
+            "csv_zip",
+            "wysiwyg_pdf",
+            "assembled_pdf",
+            "wysiwyg_png"
+        ],
+        "supported_action_types": [
+            "dashboard",
+            "query"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Agoogle_cloud_storage/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "client_email",
+                "label": "Client Email",
+                "description": "Your client email for GCS from https://console.cloud.google.com/apis/credentials",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "private_key",
+                "label": "Private Key",
+                "description": "Your private key for GCS from https://console.cloud.google.com/apis/credentials",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "project_id",
+                "label": "Project Id",
+                "description": "The Project Id for your GCS project from https://console.cloud.google.com/apis/credentials",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::google_drive",
+        "integration_hub_id": "1",
+        "label": "Google Drive",
+        "description": "Create a new file in Google Drive.",
+        "enabled": false,
+        "supported_formats": [
+            "txt",
+            "csv",
+            "inline_json",
+            "json",
+            "json_label",
+            "json_detail",
+            "json_detail_lite_stream",
+            "json_bi",
+            "xlsx",
+            "html",
+            "csv_zip",
+            "wysiwyg_pdf",
+            "assembled_pdf",
+            "wysiwyg_png"
+        ],
+        "supported_action_types": [
+            "dashboard",
+            "query"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Agoogle_drive/icon",
+        "uses_oauth": true,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::google_sheets",
+        "integration_hub_id": "1",
+        "label": "Google Sheets",
+        "description": "Create a new Google Sheet.",
+        "enabled": false,
+        "supported_formats": [
+            "csv"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Agoogle_sheets/icon",
+        "uses_oauth": true,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::hubspot_companies",
+        "integration_hub_id": "1",
+        "label": "Hubspot Companies",
+        "description": "Update properties on your Hubspot companies.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Ahubspot_companies/icon",
+        "uses_oauth": false,
+        "required_fields": [
+            {
+                "tag": "",
+                "any_tag": [
+                    "hubspot_company_id"
+                ],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "hubspot_api_key",
+                "label": "Hubspot API Key",
+                "description": "An api key for Hubspot.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "hubspot_batch_update_size",
+                "label": "Batch Update Size",
+                "description": "The number of objects to batch update per call (defaulted to 10)",
+                "required": false,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": false
+        }
+    },
+    {
+        "id": "1::hubspot_contacts",
+        "integration_hub_id": "1",
+        "label": "Hubspot Contacts",
+        "description": "Update properties on your Hubspot contacts.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Ahubspot_contacts/icon",
+        "uses_oauth": false,
+        "required_fields": [
+            {
+                "tag": "",
+                "any_tag": [
+                    "hubspot_contact_id"
+                ],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "hubspot_api_key",
+                "label": "Hubspot API Key",
+                "description": "An api key for Hubspot.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "hubspot_batch_update_size",
+                "label": "Batch Update Size",
+                "description": "The number of objects to batch update per call (defaulted to 10)",
+                "required": false,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": false
+        }
+    },
+    {
+        "id": "1::jira_create_issue",
+        "integration_hub_id": "1",
+        "label": "JIRA",
+        "description": "Create a JIRA issue referencing data.",
+        "enabled": false,
+        "supported_formats": [
+            "txt",
+            "csv",
+            "inline_json",
+            "json",
+            "json_label",
+            "json_detail",
+            "json_detail_lite_stream",
+            "json_bi",
+            "xlsx",
+            "html",
+            "csv_zip",
+            "wysiwyg_pdf",
+            "assembled_pdf",
+            "wysiwyg_png"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Ajira_create_issue/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "address",
+                "label": "Address",
+                "description": "The address of your JIRA server ex. https://myjira.atlassian.net.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "username",
+                "label": "Username",
+                "description": "The JIRA username assigned to create issues for Looker.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "password",
+                "label": "Password",
+                "description": "The password for the JIRA user assigned to Looker.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::kloudio",
+        "integration_hub_id": "1",
+        "label": "Kloudio",
+        "description": "Add data to Google sheets.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Akloudio/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::marketo",
+        "integration_hub_id": "1",
+        "label": "Marketo",
+        "description": "Update Marketo leads and their campaign/list membership.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Amarketo/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "url",
+                "label": "URL",
+                "description": "Identity server host URL",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "clientID",
+                "label": "Client ID",
+                "description": "Client ID from Marketo",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "clientSecret",
+                "label": "Client Secret",
+                "description": "Client Secret from Marketo",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::mparticle",
+        "integration_hub_id": "1",
+        "label": "mParticle",
+        "description": "Send user or event data from Looker to mParticle.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Amparticle/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "apiKey",
+                "label": "API Key",
+                "description": "API Key for mParticle",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "apiSecret",
+                "label": "API Secret",
+                "description": "API Secret for mParticle",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::salesforce_campaigns",
+        "integration_hub_id": "1",
+        "label": "Salesforce Campaigns",
+        "description": "Add contacts or leads to Salesforce campaign.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail_lite_stream"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Asalesforce_campaigns/icon",
+        "uses_oauth": true,
+        "required_fields": [
+            {
+                "tag": "",
+                "any_tag": [
+                    "sfdc_contact_id",
+                    "sfdc_lead_id"
+                ],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "salesforce_domain",
+                "label": "Salesforce domain",
+                "description": "Salesforce domain name, e.g. https://MyDomainName.my.salesforce.com",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": "salesforce_campaigns_action_domain",
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::segment_event",
+        "integration_hub_id": "1",
+        "label": "Segment Identify",
+        "description": "Add traits via identify to your Segment users.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Asegment_event/icon",
+        "uses_oauth": false,
+        "required_fields": [
+            {
+                "tag": "",
+                "any_tag": [
+                    "email",
+                    "user_id",
+                    "segment_anonymous_id"
+                ],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "segment_write_key",
+                "label": "Segment Write Key",
+                "description": "A write key for Segment.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": false
+        }
+    },
+    {
+        "id": "1::segment_group",
+        "integration_hub_id": "1",
+        "label": "Segment Group",
+        "description": "Add traits and / or users to your Segment groups.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Asegment_group/icon",
+        "uses_oauth": false,
+        "required_fields": [
+            {
+                "tag": "segment_group_id",
+                "any_tag": [
+                    "email",
+                    "user_id",
+                    "segment_anonymous_id"
+                ],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "segment_write_key",
+                "label": "Segment Write Key",
+                "description": "A write key for Segment.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": false
+        }
+    },
+    {
+        "id": "1::segment_track",
+        "integration_hub_id": "1",
+        "label": "Segment Track",
+        "description": "Add traits via track to your Segment users.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Asegment_track/icon",
+        "uses_oauth": false,
+        "required_fields": [
+            {
+                "tag": "",
+                "any_tag": [
+                    "email",
+                    "user_id",
+                    "segment_anonymous_id"
+                ],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "segment_write_key",
+                "label": "Segment Write Key",
+                "description": "A write key for Segment.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::sendgrid",
+        "integration_hub_id": "1",
+        "label": "SendGrid",
+        "description": "Send data files to an email via SendGrid.",
+        "enabled": false,
+        "supported_formats": [
+            "txt",
+            "csv",
+            "inline_json",
+            "json",
+            "json_label",
+            "json_detail",
+            "json_detail_lite_stream",
+            "json_bi",
+            "xlsx",
+            "html",
+            "csv_zip",
+            "wysiwyg_pdf",
+            "assembled_pdf",
+            "wysiwyg_png"
+        ],
+        "supported_action_types": [
+            "query",
+            "dashboard"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Asendgrid/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "sendgrid_api_key",
+                "label": "SendGrid API Key",
+                "description": "API key for SendGrid from https://app.sendgrid.com/settings/api_keys.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::slack",
+        "integration_hub_id": "1",
+        "label": "Slack Attachment (API Token)",
+        "description": "Write a data file to Slack using a bot user token or legacy API token.",
+        "enabled": false,
+        "supported_formats": [
+            "txt",
+            "csv",
+            "inline_json",
+            "json",
+            "json_label",
+            "json_detail",
+            "json_detail_lite_stream",
+            "json_bi",
+            "xlsx",
+            "html",
+            "csv_zip",
+            "wysiwyg_pdf",
+            "assembled_pdf",
+            "wysiwyg_png"
+        ],
+        "supported_action_types": [
+            "query",
+            "dashboard"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Aslack/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "slack_api_token",
+                "label": "Slack API Token",
+                "description": "A Slack API token that includes the permissions \"channels:read\", \"users:read\", \"groups:read\", and \"files:write:user\". Follow the instructions to get a token at https://github.com/looker/actions/blob/master/src/actions/slack/legacy_slack/README.md",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::slack_app",
+        "integration_hub_id": "1",
+        "label": "Slack",
+        "description": "Explore and share Looker content in Slack.",
+        "enabled": false,
+        "supported_formats": [
+            "txt",
+            "csv",
+            "inline_json",
+            "json",
+            "json_label",
+            "json_detail",
+            "json_detail_lite_stream",
+            "json_bi",
+            "xlsx",
+            "html",
+            "csv_zip",
+            "wysiwyg_pdf",
+            "assembled_pdf",
+            "wysiwyg_png"
+        ],
+        "supported_action_types": [
+            "query",
+            "dashboard"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Aslack_app/icon",
+        "uses_oauth": true,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": true,
+        "params": [
+            {
+                "name": "install",
+                "label": "Connect to Slack",
+                "description": "View dashboards and looks,n     browse your favorites or folders, and interact with Looker content without leaving Slack.",
+                "required": false,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": "/admin/integrations/slack/install",
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::teams_incomingwebhook",
+        "integration_hub_id": "1",
+        "label": "Teams - Incoming Webhook",
+        "description": "Send data to Teams Incoming webhook",
+        "enabled": false,
+        "supported_formats": [
+            "csv",
+            "wysiwyg_png",
+            "wysiwyg_pdf"
+        ],
+        "supported_action_types": [
+            "query",
+            "dashboard"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Ateams_incomingwebhook/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::tray",
+        "integration_hub_id": "1",
+        "label": "Tray",
+        "description": "Send data and begin a Tray workflow.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Atray/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::twilio",
+        "integration_hub_id": "1",
+        "label": "Twilio - Send Data",
+        "description": "Send data from a Look to a phone number via Twilio.",
+        "enabled": false,
+        "supported_formats": [
+            "csv"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Atwilio/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "accountSid",
+                "label": "Account SID",
+                "description": "Account SID from www.twilio.com/console.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "authToken",
+                "label": "Auth Token",
+                "description": "Auth Token from www.twilio.com/console.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "from",
+                "label": "Twilio Verified Phone Number",
+                "description": "A valid Twilio number from www.twilio.com/console/phone-numbers/verified.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::twilio_message",
+        "integration_hub_id": "1",
+        "label": "Twilio - Send Message",
+        "description": "Send a message to phone numbers via Twilio.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "cell",
+            "query"
+        ],
+        "supported_formattings": [
+            "formatted",
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "apply",
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "push"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Atwilio_message/icon",
+        "uses_oauth": false,
+        "required_fields": [
+            {
+                "tag": "phone",
+                "any_tag": [],
+                "all_tags": []
+            }
+        ],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [
+            {
+                "name": "accountSid",
+                "label": "Account SID",
+                "description": "Account SID from www.twilio.com/console.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "authToken",
+                "label": "Auth Token",
+                "description": "Auth Token from www.twilio.com/console.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": true,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            },
+            {
+                "name": "from",
+                "label": "Twilio Verified Phone # Caller Id",
+                "description": "A valid Twilio number from www.twilio.com/console/phone-numbers/verified.",
+                "required": true,
+                "has_value": false,
+                "user_attribute_name": null,
+                "sensitive": false,
+                "per_user": false,
+                "delegate_oauth_url": null,
+                "value": null
+            }
+        ],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    },
+    {
+        "id": "1::zapier",
+        "integration_hub_id": "1",
+        "label": "Zapier",
+        "description": "Send data and begin a Zapier zap.",
+        "enabled": false,
+        "supported_formats": [
+            "json_detail"
+        ],
+        "supported_action_types": [
+            "query"
+        ],
+        "supported_formattings": [
+            "unformatted"
+        ],
+        "supported_visualization_formattings": [
+            "noapply"
+        ],
+        "supported_download_settings": [
+            "url"
+        ],
+        "icon_url": "https://analytics.mediaconfidant.com/integrations/1%3A%3Azapier/icon",
+        "uses_oauth": false,
+        "required_fields": [],
+        "privacy_link": null,
+        "delegate_oauth": false,
+        "params": [],
+        "installed_delegate_oauth_targets": [],
+        "can": {
+            "configure_user_attribute_params": false,
+            "fetch_form": false,
+            "index": true,
+            "show": true,
+            "send_to": false,
+            "show_icon": true,
+            "show_param_values": true,
+            "update": true,
+            "test": true
+        }
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "customers",
+        "is_default": true
+    },
+    {
+        "name": "looker_scratch",
+        "is_default": false
+    },
+    {
+        "name": "synthetic",
+        "is_default": false
+    }
+]

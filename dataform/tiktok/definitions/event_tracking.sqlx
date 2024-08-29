@@ -1,0 +1,16 @@
+config {
+  type: "table",
+  schema: "tiktok"
+}
+
+select
+  event_id,
+  ad_id,
+  adgroup_id,
+  campaign_id,
+  event_type,
+  event_value,
+  event_time,
+  conversions
+from
+  raw_event_tracking_data

@@ -1,0 +1,257 @@
+# The name of this view in Looker is "Ad Report Daily"
+view: ad_report_daily {
+  # The sql_table_name parameter indicates the underlying database table
+  # to be used for all fields in this view.
+  sql_table_name: @{TIKTOK_SCHEMA}."AD_REPORT_DAILY"
+    ;;
+  # No primary key is defined for this view. In order to join this view in an Explore,
+  # define primary_key: yes on a dimension that has no repeated values.
+
+  # Here's what a typical dimension looks like in LookML.
+  # A dimension is a groupable field that can be used to filter query results.
+  # This dimension will be called " File" in Explore.
+
+  dimension: _file {
+    type: string
+    sql: ${TABLE}."_FILE" ;;
+  }
+
+  dimension: _fivetran_synced {
+    type: string
+    sql: ${TABLE}."_FIVETRAN_SYNCED" ;;
+  }
+
+  dimension: _line {
+    type: number
+    sql: ${TABLE}."_LINE" ;;
+  }
+
+  dimension: ad_id {
+    type: number
+    sql: ${TABLE}."AD_ID" ;;
+  }
+
+  dimension: average_video_play {
+    type: number
+    sql: ${TABLE}."AVERAGE_VIDEO_PLAY" ;;
+  }
+
+  dimension: average_video_play_per_user {
+    type: number
+    sql: ${TABLE}."AVERAGE_VIDEO_PLAY_PER_USER" ;;
+  }
+
+  dimension: clicks {
+    type: number
+    sql: ${TABLE}."CLICKS" ;;
+  }
+
+  dimension: comments {
+    type: number
+    sql: ${TABLE}."COMMENTS" ;;
+  }
+
+  dimension: conversion {
+    type: number
+    sql: ${TABLE}."CONVERSION" ;;
+  }
+
+  # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
+  # measures for this dimension, but you can also add measures of many different aggregates.
+  # Click on the type parameter to see all the options in the Quick Help panel on the right.
+
+  measure: total_conversion {
+    type: sum
+    sql: ${conversion} ;;
+  }
+
+  measure: average_conversion {
+    type: average
+    sql: ${conversion} ;;
+  }
+
+  dimension: conversion_rate {
+    type: number
+    sql: ${TABLE}."CONVERSION_RATE" ;;
+  }
+
+  dimension: cost_per_1000_reached {
+    type: number
+    sql: ${TABLE}."COST_PER_1000_REACHED" ;;
+  }
+
+  dimension: cost_per_conversion {
+    type: number
+    sql: ${TABLE}."COST_PER_CONVERSION" ;;
+  }
+
+  dimension: cost_per_result {
+    type: number
+    sql: ${TABLE}."COST_PER_RESULT" ;;
+  }
+
+  dimension: cost_per_secondary_goal_result {
+    type: string
+    sql: ${TABLE}."COST_PER_SECONDARY_GOAL_RESULT" ;;
+  }
+
+  dimension: cpc {
+    type: number
+    sql: ${TABLE}."CPC" ;;
+  }
+
+  dimension: cpm {
+    type: number
+    sql: ${TABLE}."CPM" ;;
+  }
+
+  dimension: ctr {
+    type: number
+    sql: ${TABLE}."CTR" ;;
+  }
+
+  dimension: follows {
+    type: number
+    sql: ${TABLE}."FOLLOWS" ;;
+  }
+
+  dimension: impressions {
+    type: number
+    sql: ${TABLE}."IMPRESSIONS" ;;
+  }
+
+  dimension: likes {
+    type: number
+    sql: ${TABLE}."LIKES" ;;
+  }
+
+  dimension: profile_visits {
+    type: number
+    sql: ${TABLE}."PROFILE_VISITS" ;;
+  }
+
+  dimension: profile_visits_rate {
+    type: number
+    sql: ${TABLE}."PROFILE_VISITS_RATE" ;;
+  }
+
+  dimension: reach {
+    type: number
+    sql: ${TABLE}."REACH" ;;
+  }
+
+  dimension: real_time_conversion {
+    type: number
+    sql: ${TABLE}."REAL_TIME_CONVERSION" ;;
+  }
+
+  dimension: real_time_conversion_rate {
+    type: number
+    sql: ${TABLE}."REAL_TIME_CONVERSION_RATE" ;;
+  }
+
+  dimension: real_time_cost_per_conversion {
+    type: number
+    sql: ${TABLE}."REAL_TIME_COST_PER_CONVERSION" ;;
+  }
+
+  dimension: real_time_cost_per_result {
+    type: number
+    sql: ${TABLE}."REAL_TIME_COST_PER_RESULT" ;;
+  }
+
+  dimension: real_time_result {
+    type: number
+    sql: ${TABLE}."REAL_TIME_RESULT" ;;
+  }
+
+  dimension: real_time_result_rate {
+    type: number
+    sql: ${TABLE}."REAL_TIME_RESULT_RATE" ;;
+  }
+
+  dimension: result {
+    type: number
+    sql: ${TABLE}."RESULT" ;;
+  }
+
+  dimension: result_rate {
+    type: number
+    sql: ${TABLE}."RESULT_RATE" ;;
+  }
+
+  dimension: secondary_goal_result {
+    type: string
+    sql: ${TABLE}."SECONDARY_GOAL_RESULT" ;;
+  }
+
+  dimension: secondary_goal_result_rate {
+    type: string
+    sql: ${TABLE}."SECONDARY_GOAL_RESULT_RATE" ;;
+  }
+
+  dimension: shares {
+    type: number
+    sql: ${TABLE}."SHARES" ;;
+  }
+
+  dimension: skan_conversion {
+    type: number
+    sql: ${TABLE}."SKAN_CONVERSION" ;;
+  }
+
+  dimension: skan_cost_per_conversion {
+    type: number
+    sql: ${TABLE}."SKAN_COST_PER_CONVERSION" ;;
+  }
+
+  dimension: spend {
+    type: number
+    sql: ${TABLE}."SPEND" ;;
+  }
+
+  dimension: stat_time_day {
+    type: string
+    sql: ${TABLE}."STAT_TIME_DAY" ;;
+  }
+
+  dimension: video_play_actions {
+    type: number
+    sql: ${TABLE}."VIDEO_PLAY_ACTIONS" ;;
+  }
+
+  dimension: video_views_p_100 {
+    type: number
+    sql: ${TABLE}."VIDEO_VIEWS_P_100" ;;
+  }
+
+  dimension: video_views_p_25 {
+    type: number
+    sql: ${TABLE}."VIDEO_VIEWS_P_25" ;;
+  }
+
+  dimension: video_views_p_50 {
+    type: number
+    sql: ${TABLE}."VIDEO_VIEWS_P_50" ;;
+  }
+
+  dimension: video_views_p_75 {
+    type: number
+    sql: ${TABLE}."VIDEO_VIEWS_P_75" ;;
+  }
+
+  dimension: video_watched_2_s {
+    type: number
+    sql: ${TABLE}."VIDEO_WATCHED_2_S" ;;
+  }
+
+  dimension: video_watched_6_s {
+    type: number
+    sql: ${TABLE}."VIDEO_WATCHED_6_S" ;;
+  }
+
+  measure: count {
+    type: count
+    drill_fields: []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "label": "LookML Diagram",
+  "category_label": "Applications",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/app-icons/ERD.svg",
+    "tagline": "Visualize your LookML models.",
+    "brand_color": "#4c8bf5"
+  },
+  "constants": {
+    "CONNECTION_NAME": {
+      "label": "Connection Name",
+      "value_constraint": "connection"
+    }
+  },
+  "models": [
+    {
+      "name": "lookml-diagram",
+      "connection_constant": "CONNECTION_NAME"
+    }
+  ]
+}

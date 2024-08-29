@@ -1,0 +1,38 @@
+[
+    {
+        "id": "2",
+        "name": "01E883-74AB5D-491E4A",
+        "client_id": "494662760281-kaeh9q5a5vfpvdd90baokvo4slsqbvrt.apps.googleusercontent.com",
+        "tenant_id": null,
+        "dialect_name": "bigquery_standard_sql",
+        "created_at": "2024-02-02T21:24:41.000Z",
+        "can": {
+            "create": true,
+            "index": true
+        }
+    },
+    {
+        "id": "3",
+        "name": "mediaconfidant",
+        "client_id": "707664316556-5m78mnhkqj923gble0la7h1t09u6rfb4.apps.googleusercontent.com",
+        "tenant_id": "",
+        "dialect_name": "bigquery_standard_sql",
+        "created_at": "2024-07-12T13:17:35.000Z",
+        "can": {
+            "create": true,
+            "index": true
+        }
+    },
+    {
+        "id": "4",
+        "name": "gildedritual",
+        "client_id": "mstrachan@mediaconfidant.com",
+        "tenant_id": "",
+        "dialect_name": "bigquery_standard_sql",
+        "created_at": "2024-08-10T09:40:41.000Z",
+        "can": {
+            "create": true,
+            "index": true
+        }
+    }
+]
