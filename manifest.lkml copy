@@ -62,3 +62,14 @@ constant: GA4_BQML_future_synth_months {
 #     value: "empyrean-backup-411421"
 #   }
 # }
+
+# Local Dependencies
+local_dependency: {
+  project: "lookml_ga4"
+  override_constant: GA4_CONNECTION {
+    value: "empyrean-backup-411421"
+  }
+  override_constant: GA4_SCHEMA {
+    value: "analytics_321061426"
+  }
+}
