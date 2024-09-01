@@ -1,0 +1,104 @@
+summary:
+  bigquery_api:
+    - "Step 2: Create looker_scratch Schema"
+    - "Step 11: Manage BigQuery Tables"
+    - "Step 12: Run Queries and Load Data in BigQuery"
+  
+  looker_api:
+    - "Step 6: Create Database Connection in Looker"
+    - "Step 7: Create Looker Project and Model"
+    - "Step 8: Build User-Defined Dashboards if LookML Dashboards Do Not Meet Objectives"
+    - "Step 9: Configure User Attributes in Looker"
+    - "Step 10: Verify and Finalize Setup"
+  
+  dataform_api:
+    - "Step 5: Create Dataform SQLX (if needed)"
+  
+  custom_or_vendor_specific_api:
+    - "Step 3: Create API Script (if needed)"
+    - "Step 4: Set Up API to Run Daily"
+
+workflow:
+  - step: 1
+    name: "Customer Grants Permissions"
+    description: >
+      The customer grants the necessary permissions (BigQuery Data Viewer, BigQuery Job User, and BigQuery Data Editor) to the MediaConfidant service account for their various vendors.
+    details:
+      - GA4:
+          - Connection Type: BigQuery (via DTS)
+          - Dataform: Not needed (LookML Block already written and tested)
+      - Google Ads:
+          - Connection Type: BigQuery (via DTS)
+          - Dataform: Not needed (LookML Block already written and tested)
+      - Meta Ads:
+          - Connection Type: BigQuery (via DTS)
+          - Dataform: Needed (LookML Block is untested)
+      - Bing Ads & TikTok Ads:
+          - Connection Type: Could be API login (username, password, URL)
+          - API Script: Required (TikTok script written, not tested)
+          - Dataform SQLX: Required (TikTok SQLX written, not tested)
+
+  - step: 2
+    name: "Create looker_scratch Schema"
+    description: >
+      MediaConfidant creates a "looker_scratch" schema for each new connection in the customer's database under their project. This is why BigQuery Data Editor permissions are required.
+    methods: bigquery.datasets.insert, bigquery.projects.locations.connections.get
+    api: BigQuery API
+
+  - step: 3
+    name: "Create API Script (if needed)"
+    description: >
+      MediaConfidant writes the necessary API scripts for vendors that require data extraction via API (e.g., Bing Ads, TikTok Ads). If the API script already exists, verify and adjust as necessary.
+    api: Custom API or Vendor-specific API
+
+  - step: 4
+    name: "Set Up API to Run Daily"
+    description: >
+      MediaConfidant sets up the API to run daily, ensuring that the data is updated regularly for vendors requiring API-based data extraction.
+    api: Custom API or Vendor-specific API
+
+  - step: 5
+    name: "Create Dataform SQLX (if needed)"
+    description: >
+      MediaConfidant creates Dataform SQLX transformations for vendors where the LookML Block is untested or needs additional transformation logic (e.g., Meta Ads, TikTok Ads).
+    methods: dataform_v1beta1.projects.locations.repositories.compilationResults.create
+    api: Dataform API
+
+  - step: 6
+    name: "MediaConfidant Creates Database Connection in Looker"
+    methods: create_connection
+    api: Looker API
+
+  - step: 7
+    name: "MediaConfidant Creates Looker Project and Model"
+    methods: create_project, update_project, deploy_to_production
+    api: Looker API
+
+  - step: 8
+    name: "Build User-Defined Dashboards if LookML Dashboards Do Not Meet Objectives"
+    methods: create_dashboard, update_dashboard
+    api: Looker API
+
+  - step: 9
+    name: "MediaConfidant Configures User Attributes in Looker"
+    methods: create_user_attribute, set_user_attribute_value
+    api: Looker API
+
+  - step: 10
+    name: "MediaConfidant Verifies and Finalizes Setup"
+    methods: all_dashboards, validate_lookml, run_query
+    api: Looker API
+
+  - step: 11
+    name: "Manage BigQuery Tables"
+    description: >
+      Automate the creation, update, and deletion of tables in the looker_scratch schema as needed for storing results or managing intermediate data.
+    methods: bigquery.tables.insert, bigquery.tables.update, bigquery.tables.delete
+    api: BigQuery API
+
+  - step: 12
+    name: "Run Queries and Load Data in BigQuery"
+    description: >
+      Automate data loading and transformation tasks that prepare data for Looker dashboards by executing SQL queries or scheduling jobs in BigQuery.
+    methods: bigquery.jobs.insert
+    api: BigQuery API
