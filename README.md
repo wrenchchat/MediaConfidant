@@ -1,7 +1,7 @@
 
 # README
 
-[![Mutable.ai Auto Wiki](https://img.shields.io/badge/Auto_Wiki-Mutable.ai-blue)](https://wiki.mutable.ai/wrenchchatrepo/mediaconfidant) **&larr;&larr;&larr;CLICK HERE TO SEE OUR AI POWERED WIKI!**
+[![Mutable.ai Auto Wiki](https://img.shields.io/badge/Auto_Wiki-Mutable.ai-blue)](https://wiki.mutable.ai/wrenchchat/MediaConfidant) **&larr;&larr;&larr;CLICK HERE TO SEE OUR AI POWERED WIKI!**
 
 ## LookML Project Structure and Conceptual Overview
 
