@@ -11,7 +11,7 @@ The Data Product is a result of the Analytics Pipeline: the data model includes 
 
 The modern data stack is a collection of tools that work together to help businesses collect, clean, analyze, and visualize data. Dataform, Looker, and BigQuery create a powerful analytical stack but are only part of the solution. This document outlines the necessary supporting infrastructure with the following objectives:
 
-![Mediaconfidant](https://github.com/user-attachments/assets/17234773-6e64-43b5-be80-f6ebf41e2103)
+![Mediaconfidant]([https://github.com/user-attachments/assets/17234773-6e64-43b5-be80-f6ebf41e2103](https://github.com/wrenchchat/MediaConfidant/blob/0f1dd1c0db4c699a49bf582c014696a3481dac62/.github/Doit%20MediaConfidant.png))
 
 **Improved data insights:** BigQuery's analytics engine can be used with Looker to produce more than just data.
 
