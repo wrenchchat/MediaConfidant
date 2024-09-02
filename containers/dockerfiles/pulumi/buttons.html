@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub CSR Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        .button {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub CSR Buttons</h1>
+
+    <!-- Button to Trigger GitHub Action -->
+    <button class="button" onclick="triggerAction()">Trigger GitHub Action</button>
+
+    <!-- Button to Create GitHub Issue -->
+    <button class="button" onclick="createIssue()">Create GitHub Issue</button>
+
+    <!-- Button to Open Repository -->
+    <button class="button" onclick="openRepo()">Open GitHub Repository</button>
+
+    <script>
+        function triggerAction() {
+            alert('This will trigger a GitHub Action.');
+            // Here you can add code to interact with the GitHub API or trigger a GitHub Action
+        }
+
+        function createIssue() {
+            alert('This will create a GitHub Issue.');
+            // Here you can add code to create a new issue using the GitHub API
+        }
+
+        function openRepo() {
+            window.open('https://github.com/yourusername/yourrepository', '_blank');
+        }
+    </script>
+</body>
+</html>
