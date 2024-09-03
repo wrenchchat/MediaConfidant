@@ -83,29 +83,6 @@ docs/
  -- data/ # Documents related to specific data blocks like Bing Ads, Meta, and TikTok
  -- tools/ # Resources for tools integrated into the project
 ```
-
-## Project Structure
-
-```
-bigquery/
--ml/ # Machine Learning SQL statements
--sql/ # Useful SQL
-containers/
--dockerfiles/
--pulumi/ # Infrastructure As Code
---programs/
-definitions/ # Dataform SQLX transformations
-looker/
--demo/ # Vendor model for demos
---views/
--marketplace_ga4/ # GA4 model
--marketplace_google-ads-transfer-v2/ # Google Ads model
---views/
-spectacles/ # Recommendation to use Spectacles
-Agentic_System.md # A proposal for a Gemini Agentic Sytem
-README.md
-```
-
 ## LookML is a data modeling language for describing dimensions, fields, aggregates and relationships based on SQL.
 
 LookML is powerful because it:
