@@ -1,0 +1,49 @@
+MediaConfidant:
+  - bigquery:
+    - ml/
+    - sql/
+  - blocks:
+    - app-data-dictionary/*
+    - app-lookml-diagram/*
+    - block-bing-ads/
+    - block-cortex-meta/
+    - block-ga4/*
+    - block-google-ads/*
+    - block-tiktok/
+    - extension-api-explorer/*
+    - synthetic-block/*
+  - containers:
+    - dockerfiles/
+    - looker_objects/
+    - pulumi/
+  - dataform:
+    - definitions/
+    - includes/
+    - tiktok/
+  - docs:
+    - instructions:
+      - codestuff/
+      - custom_roles/
+      - deployment/
+      - new_data/
+    - looker:
+      - gcp_support/
+      - looker_api/
+      - support/
+    - official/
+    - pipeline/
+    - roadmap:
+      - ai_dev/
+      - data:
+        - tiktok/
+        - vendors/
+    - tools:
+      - ai_ml/
+      - next/
+
+  README.md
+  Document_Index.md
+
+# Note: blocks marked with * are in Looker production
+"""
+
