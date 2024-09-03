@@ -51,22 +51,38 @@ The modern data stack is a collection of tools that work together to help busine
 + Looker Visualizations: This area connects directly with end users (MC Customers and BYOV - Bring Your Own Visualization), delivering insights and visualizations.
 
 ## 4. Project Structure
-- **agentic_system/**  *Readmes for AI system*
-- **bigquery/**   *BQML files*
-  - **ml/**  *ML SQL statements*
-  - **sql/**  *Useful SQL*
-- **containers/**  *Infrastructure As Code*
-  - **dockerfiles/**  *Docker for Pulumi*
-  - **pulumi/**  *Deploy programs*
-    - **programs/**  *Pulumi deploy files*
-- **dataform/**  *SQLX transformations*
-- **ga4/**  *Undeployed Looker model*
-- **google-adwords/**  *Undeployed Looker model*
-- **instructions/**  *on how to do most stuff*
-- **looker-explore-assistant/**  *Gemini for Looker*
-- **marketplace_google-ads/**  *Undeployed Looker model*
-- **spectacles/**  *Recommendation to use Spectacles*
-- **vendors/**  *Deployed Looker model*
+```
+bigquery/
+- ml/ # Machine Learning SQL statements
+- sql/ # Useful SQL
+blocks/
+- app-data-dictionary/* # Looker Block for data dictionary
+- app-lookml-diagram/* # Looker Block for LookML diagram visualization
+- block-bing-ads/ # Looker Block for Bing Ads analytics
+- block-cortex-meta/ # Looker Block for Meta (Facebook, Instagram) analytics
+- block-ga4/* # Looker Block for GA4 analytics
+- block-google-ads/* # Looker Block for Google Ads analytics
+- block-tiktok/ # Looker Block for TikTok analytics
+- extension-api-explorer/* # Looker Block for API Explorer
+- synthetic-block/* # Looker Block for synthetic data
+containers/
+- dockerfiles/ # Docker configurations for containerized deployments
+- looker_objects/ # Looker-specific configurations and scripts
+- pulumi/ # Pulumi scripts for managing GCP infrastructure
+dataform/
+- definitions/ # SQLX definitions for table creation and transformation
+- includes/ # Reusable SQLX snippets
+- tiktok/ # Specific transformations and configurations for TikTok data
+docs/
+- instructions/ # Step-by-step guides for various tasks
+- looker/ # Looker-specific support documentation
+- official/ # Official documentation and summaries
+- pipeline/ # Guides and scripts related to the data pipeline
+- roadmap/ # Future development plans and AI/ML documentation
+ -- ai_dev/ # Documents related to AI development and integrations
+ -- data/ # Documents related to specific data blocks like Bing Ads, Meta, and TikTok
+ -- tools/ # Resources for tools integrated into the project
+```
 
 ## Project Structure
 
