@@ -8,14 +8,14 @@
 - [x] Remove any unnecessary branches, stale issues, or PRs.
 - [x] Ensure .gitignore is properly configured to exclude sensitive files.
 - [x] Review and clean up the README.md and documentation files.
-- [ ] Review Mutable AI Auto wiki and transfer billing ownershop.
+- [x] Review Mutable AI Auto wiki and transfer billing ownershop.
 #### 2. Access and Permissions:
 - [x] Remove any personal or third-party access that should not be transferred.
 - [x] Add the customer as a collaborator or transfer the repository ownership directly.
 - [x] Update or remove any service tokens, SSH keys, or OAuth apps that should not be transferred.
 #### 3. Repository Transfer:
-- [ ] If transferring ownership, follow GitHub’s repository transfer process.
-- [ ] Ensure the customer has proper permissions and access once the transfer is complete.
+- [x] If transferring ownership, follow GitHub’s repository transfer process.
+- [x] Ensure the customer has proper permissions and access once the transfer is complete.
 #### 4. Submodules and External Dependencies:
 - [x] Ensure any Git submodules are correctly configured and accessible to the customer.
 - [x] Document any external dependencies and ensure they are accessible to the customer.
@@ -61,9 +61,9 @@
 - [x] Transfer any Terraform, Deployment Manager, or other IaC scripts.
 - [x] Ensure the customer can deploy, manage, and modify the infrastructure using the provided IaC tools.
 #### 10. Final Verification and Handoff:
-- [ ] Conduct a final walkthrough with the customer to review all transferred assets and permissions.
+- [x] Conduct a final walkthrough with the customer to review all transferred assets and permissions.
 - [x] Provide a detailed handover document outlining the environment, architecture, and any special considerations.
-- [ ] Set up a final meeting to address any last-minute questions or issues.
+- [x] Set up a final meeting to address any last-minute questions or issues.
 
 **[Google Cloud Setup](https://console.cloud.google.com/cloud-setup/foundations?orgonly=true&organizationId=26556118309)**
 
